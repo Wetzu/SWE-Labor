@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="ba089nkfzh2kp0-ienbh1">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="HTML Client"/>
+		<link uin="ieje0rkfzhbe3twfkoe4">
+			<property name="$metaclass" value="Dependency20"/>
+			<participant referencedUin="design:node:::ba089nkfzh2kp0-ienbh1" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:design.components.overview.StompEndPoint" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rkfzhbh20shitmh">
+			<property name="$metaclass" value="Dependency20"/>
+			<participant referencedUin="design:node:::ba089nkfzh2kp0-ienbh1" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:design.components.overview.WebController" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rkfzhbk6gm9jskn">
+			<property name="$metaclass" value="Dependency20"/>
+			<participant referencedUin="design:node:::ba089nkfzh2kp0-ienbh1" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:design.components.overview.StaticFileProvider" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ba089nkfzh2xy1hfssac">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="Server"/>
+		<node uin="-vedwtdkfzh33e5-k6q8ks">
+			<property name="$metaclass" value="Port20"/>
+			<property name="isService" value="true"/>
+			<property name="visibility" value="public"/>
+			<property name="$name" value="WebSocket"/>
+			<link uin="ieje0rkfzh9o4a-x6t12h">
+				<property name="$metaclass" value="ProvidedInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdkfzh33e5-k6q8ks:ba089nkfzh2xy1hfssac" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:design.components.overview.StompEndPoint" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rkfzhdcuo1s1fvn">
+				<property name="kind" value="delegation"/>
+				<property name="$metaclass" value="Connector20"/>
+				<participant referencedUin="design:node:::-vedwtdkfzh33e5-k6q8ks:ba089nkfzh2xy1hfssac" role="Client"></participant>
+				<participant referencedUin="design:node:::-vedwtdkfzhd1gb-7d5orn:ba089nkfzhc2bc-15teaw:ba089nkfzh2xy1hfssac" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="-vedwtdkfzh3d6p1uuuiy">
+			<property name="$metaclass" value="Port20"/>
+			<property name="isService" value="true"/>
+			<property name="visibility" value="public"/>
+			<property name="$name" value="HTTP"/>
+			<link uin="ieje0rkfzh9rsg7rfmwm">
+				<property name="$metaclass" value="ProvidedInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdkfzh3d6p1uuuiy:ba089nkfzh2xy1hfssac" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:design.components.overview.WebController" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rkfzh9wch-2zqa1t">
+				<property name="$metaclass" value="ProvidedInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdkfzh3d6p1uuuiy:ba089nkfzh2xy1hfssac" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:design.components.overview.StaticFileProvider" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rkfzhdh4hoeh9xu">
+				<property name="kind" value="delegation"/>
+				<property name="$metaclass" value="Connector20"/>
+				<participant referencedUin="design:node:::-vedwtdkfzh3d6p1uuuiy:ba089nkfzh2xy1hfssac" role="Client"></participant>
+				<participant referencedUin="design:node:::-vedwtdkfzhd6rsexnoq7:ba089nkfzhcl68jn4hx6:ba089nkfzh2xy1hfssac" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="ba089nkfzhc2bc-15teaw">
+			<property name="$metaclass" value="Component20"/>
+			<property name="$name" value="Socket Management"/>
+			<node uin="-vedwtdkfzhd1gb-7d5orn">
+				<property name="$metaclass" value="Port20"/>
+				<property name="isService" value="true"/>
+				<property name="visibility" value="public"/>
+				<property name="$name" value=" "/>
+			</node>
+		</node>
+		<node uin="ba089nkfzhcl68jn4hx6">
+			<property name="$metaclass" value="Component20"/>
+			<property name="$name" value="Web Ui"/>
+			<node uin="-vedwtdkfzhd6rsexnoq7">
+				<property name="$metaclass" value="Port20"/>
+				<property name="isService" value="true"/>
+				<property name="visibility" value="public"/>
+				<property name="$name" value=" "/>
+			</node>
+			<link uin="ieje0rkfzhdmn4-w08iho">
+				<property name="$metaclass" value="Dependency20"/>
+				<participant referencedUin="design:node:::ba089nkfzhcl68jn4hx6:ba089nkfzh2xy1hfssac" role="Client"></participant>
+				<participant referencedUin="design:node:::ba089nkfzhc2bc-15teaw:ba089nkfzh2xy1hfssac" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rkfzhk45wh57s7k">
+				<property name="$metaclass" value="Dependency20"/>
+				<participant referencedUin="design:node:::ba089nkfzhcl68jn4hx6:ba089nkfzh2xy1hfssac" role="Client"></participant>
+				<participant referencedUin="design:node:::ba089nkfzhjmn3-fgdjz:ba089nkfzh2xy1hfssac" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="ba089nkfzhjmn3-fgdjz">
+			<property name="$metaclass" value="Component20"/>
+			<property name="$name" value="Logic"/>
+		</node>
+	</node>
+	<node uin="1g64ykfzh5c6byrfhg1">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="/webjars/sockjs-client/sockjs.min.js&#10;/webjars/stomp-websocket/stomp.min.js&#10;/app.js&#10;/index.html"/>
+		<link uin="ieje0rkfzhbosw-pa5rbi">
+			<property name="$metaclass" value="Note Link"/>
+			<participant referencedUin="design:node:::1g64ykfzh5c6byrfhg1" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:design.components.overview.StaticFileProvider" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="1g64ykfzh6cra4hwn0s">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="Bindings:&#10;GET:&#10;/rummy/doIt&#10;POST:&#10;/rummy/doIt"/>
+		<link uin="ieje0rkfzhbsls-wnhu58">
+			<property name="$metaclass" value="Note Link"/>
+			<participant referencedUin="design:node:::1g64ykfzh6cra4hwn0s" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:design.components.overview.WebController" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="1g64ykfzh8eeyhbc8h7">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="EndPoint:&#10;/rummy-websocket&#10;Destination:&#10;/update_rummy"/>
+		<link uin="ieje0rkfzhbv944svnr9">
+			<property name="$metaclass" value="Note Link"/>
+			<participant referencedUin="design:node:::1g64ykfzh8eeyhbc8h7" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:design.components.overview.StompEndPoint" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>
