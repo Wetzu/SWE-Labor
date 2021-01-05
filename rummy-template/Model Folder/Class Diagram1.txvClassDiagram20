@@ -107,37 +107,15 @@
 				</reference>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:Combination">
-			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="641,675,118,80"/>
-			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:Combination:lnkJoker">
-				<property name="sourceAnchor" value="646,712"/>
-				<property name="targetAnchor" value="340,712"/>
-				<property name="bendpoints" value=""/>
-				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Combination:lnkJoker">
-					<property name="bounds" value="610,685,26,24"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Combination:lnkJoker">
-					<property name="bounds" value="350,685,24,24"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:Combination:lnkTable">
-				<property name="sourceAnchor" value="741,680"/>
-				<property name="targetAnchor" value="906,541"/>
-				<property name="bendpoints" value=""/>
-				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Combination:lnkTable">
-					<property name="bounds" value="779,600,24,24"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Combination:lnkTable">
-					<property name="bounds" value="856,546,12,24"/>
-				</reference>
-			</reference>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:Joker">
 			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="255,695,80,80"/>
+			<property name="bounds" value="255,695,110,94"/>
 			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:Joker:Card">
+				<property name="sourceAnchor" value="370,779"/>
+				<property name="targetAnchor" value="480,779"/>
+				<property name="bendpoints" value=""/>
+			</reference>
 			<reference referencedUin="jdt:l_ast:src:Joker:lnkPlayer">
 				<property name="sourceAnchor" value="281,700"/>
 				<property name="targetAnchor" value="240,499"/>
@@ -152,7 +130,7 @@
 		</reference>
 		<reference referencedUin="jdt:e_class:src:OpenDeck">
 			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="555,436,99,80"/>
+			<property name="bounds" value="555,436,147,94"/>
 			<property name="location_set_by_user" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:OpenDeck:lnkGame">
 				<property name="sourceAnchor" value="585,441"/>
@@ -165,22 +143,32 @@
 					<property name="bounds" value="588,184,12,24"/>
 				</reference>
 			</reference>
+			<reference referencedUin="jdt:l_gnt:src:OpenDeck:Deck">
+				<property name="sourceAnchor" value="635,441"/>
+				<property name="targetAnchor" value="635,340"/>
+				<property name="bendpoints" value=""/>
+			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:ClosedDeck">
 			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="435,275,121,80"/>
+			<property name="bounds" value="415,255,141,100"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:ClosedDeck:lnkGame">
-				<property name="sourceAnchor" value="464,280"/>
+				<property name="sourceAnchor" value="464,260"/>
 				<property name="targetAnchor" value="464,178"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:ClosedDeck:lnkGame">
 					<property name="bounds" value="467,184,12,24"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:ClosedDeck:lnkGame">
-					<property name="bounds" value="467,246,12,24"/>
+					<property name="bounds" value="467,226,12,24"/>
 				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:ClosedDeck:Deck">
+				<property name="sourceAnchor" value="561,303"/>
+				<property name="targetAnchor" value="620,303"/>
+				<property name="bendpoints" value=""/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Drawing">
@@ -211,6 +199,10 @@
 					<property name="bounds" value="497,463,24,24"/>
 				</reference>
 			</reference>
+			<reference referencedUin="jdt:l_ast:src:Drawing:card">
+				<property name="sourceAnchor" value="483,541"/>
+				<property name="targetAnchor" value="483,779"/>
+			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Discarding">
 			<property name="$shortcutReference" value="true"/>
@@ -231,14 +223,18 @@
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:Discarding:lnkCombination">
 				<property name="sourceAnchor" value="469,681"/>
-				<property name="targetAnchor" value="646,681"/>
+				<property name="targetAnchor" value="780,681"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Discarding:lnkCombination">
 					<property name="bounds" value="479,654,24,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Discarding:lnkCombination">
-					<property name="bounds" value="622,654,24,24"/>
+					<property name="bounds" value="746,654,24,24"/>
 				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Discarding:card">
+				<property name="sourceAnchor" value="452,683"/>
+				<property name="targetAnchor" value="483,779"/>
 			</reference>
 		</reference>
 		<reference referencedUin="design:node:::1g64ykhjkugwz9yup2w">
@@ -294,6 +290,35 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Card">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="475,774,166,234"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Deck">
+			<property name="bounds" value="615,255,144,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:FaceCombination">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="715,835,200,314"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:ColorCombination">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="935,835,200,314"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:ColorCombination:firstCard">
+				<property name="sourceAnchor" value="940,926"/>
+				<property name="targetAnchor" value="646,926"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:ColorCombination:lastCard">
+				<property name="sourceAnchor" value="940,918"/>
+				<property name="targetAnchor" value="646,918"/>
+			</reference>
 		</reference>
 	</view>
 </nodeSet>

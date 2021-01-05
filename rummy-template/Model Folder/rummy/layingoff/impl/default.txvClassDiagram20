@@ -7,7 +7,7 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="jdt:e_class:src:rummy.layingoff.impl.LayingOffIntImpl">
-			<property name="bounds" value="5,5,153,80"/>
+			<property name="bounds" value="5,5,182,94"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

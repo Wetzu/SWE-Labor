@@ -17,5 +17,5 @@ public class Discarding {
 	 * @supplierCardinality 1..*
 	 */
 	
-	private Combination lnkCombination;
+	private CombinationInterface lnkCombination;
 }
