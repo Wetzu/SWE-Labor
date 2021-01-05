@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="qjxwm2khc5g1ku-fdkp1">
+		<property name="$metaclass" value="ActivityDiagram20"/>
+		<property name="$name" value="Karten Auslegen"/>
+	</view>
+</nodeSet>

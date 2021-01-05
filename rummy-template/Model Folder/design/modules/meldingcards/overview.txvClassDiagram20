@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhkinb7ju2-rklfcv">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="overview"/>
+		<property name="__options" value="Diagram Detail Level=Implementation"/>
+		<reference referencedUin="jdt:e_class:src:rummy.meldingcards.port.MeldingCardsPort">
+			<property name="bounds" value="565,410,300,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.meldingcards.port.MeldingCardsInt">
+			<property name="bounds" value="574,269,281,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.game.port.GamePort">
+			<property name="bounds" value="296,395,200,109"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.meldingcards.impl.MeldingCardsIntImpl">
+			<property name="bounds" value="255,269,281,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

@@ -5,5 +5,14 @@
 	<view uin="V1hexuhkfzguekn-5gztea">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.Dummy">
+			<property name="bounds" value="5,125,171,137"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.DummyObserver">
+			<property name="bounds" value="5,5,124,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>

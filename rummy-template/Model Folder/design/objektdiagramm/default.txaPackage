@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="ba089nkjfuk9jq-f8mj4">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="offenerStapel: Stapel"/>
+		<link uin="ieje0rkjfvo599ox2917">
+			<property name="directed" value="true"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="zieht Karte"/>
+			<property name="supplierNavigability" value="$supplierNavigableExplicitly"/>
+			<property name="supplierCardinality" value="0..1"/>
+			<participant referencedUin="design:node:::ba089nkjfuk9jq-f8mj4" role="Client"></participant>
+			<participant referencedUin="design:node:::ba089nkjfv0wc5qe2o8b" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ba089nkjfux7nu-j19ngv">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="verdeckterStapel: Stapel"/>
+		<link uin="ieje0rkjfvvpyk-4dz4ym">
+			<property name="directed" value="true"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="zieht Karte"/>
+			<property name="supplierNavigability" value="$supplierNavigableExplicitly"/>
+			<property name="supplierCardinality" value="0..1"/>
+			<participant referencedUin="design:node:::ba089nkjfux7nu-j19ngv" role="Client"></participant>
+			<participant referencedUin="design:node:::ba089nkjfv0wc5qe2o8b" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ba089nkjfv0wc5qe2o8b">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="handkarten: Karte"/>
+		<link uin="ieje0rkjfvwtoejul2vf">
+			<property name="directed" value="true"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="eröffnet"/>
+			<property name="supplierNavigability" value="$supplierNavigableExplicitly"/>
+			<property name="supplierCardinality" value="0..*"/>
+			<participant referencedUin="design:node:::ba089nkjfv0wc5qe2o8b" role="Client"></participant>
+			<participant referencedUin="design:node:::ba089nkjfvi90i-1npskn" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rkjfvxxw5-tr90kf">
+			<property name="directed" value="true"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="supplierNavigability" value="$supplierNavigableExplicitly"/>
+			<property name="clientCardinality" value="legt an"/>
+			<property name="supplierCardinality" value="0..*"/>
+			<participant referencedUin="design:node:::ba089nkjfv0wc5qe2o8b" role="Client"></participant>
+			<participant referencedUin="design:node:::ba089nkjfv83xu-h4cx6b" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ba089nkjfv83xu-h4cx6b">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="kombination: Kombination"/>
+		<link uin="ieje0rkjfvwgbr7avdmb">
+			<property name="directed" value="true"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="liegt aus"/>
+			<property name="supplierNavigability" value="$supplierNavigableExplicitly"/>
+			<property name="supplierCardinality" value="0..*"/>
+			<participant referencedUin="design:node:::ba089nkjfv83xu-h4cx6b" role="Client"></participant>
+			<participant referencedUin="design:node:::ba089nkjfvi90i-1npskn" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ba089nkjfvi90i-1npskn">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="tisch: Tisch"/>
+	</node>
+</nodeSet>

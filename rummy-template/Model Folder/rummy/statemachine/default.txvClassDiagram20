@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhkj037rap-auoaw1">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="design:view:::V1hexuhkj03a7biqassge">
+			<property name="bounds" value="130,5,122,107"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.StateMachine">
+			<property name="bounds" value="5,5,128,182"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:rummy.statemachine.StateMachine:currentState">
+				<property name="sourceAnchor" value="138,78"/>
+				<property name="targetAnchor" value="276,78"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkj039pk24ad8i1">
+			<property name="bounds" value="5,125,80,75"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

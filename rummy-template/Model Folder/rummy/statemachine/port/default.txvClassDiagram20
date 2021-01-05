@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhkj03a7biqassge">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.Observer">
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.Subject">
+		</reference>
+	</view>
+</nodeSet>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V-jr6xbakhc4jyot-vhm7j1">
+		<property name="$metaclass" value="UseCaseDiagram20"/>
+		<property name="$name" value="Karte Nehmen"/>
+	</view>
+</nodeSet>

@@ -5,5 +5,234 @@
 	<view uin="V1hexuhkfzguejmcmdioc">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<property name="visibility" value="public"/>
+		<reference referencedUin="design:view:::V1hexuhkgxpjftlfe3pdf">
+			<property name="bounds" value="5,205,80,60"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkfzgueket5iu4">
+			<property name="bounds" value="115,5,133,203"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkfzgx51yvt6cve">
+			<property name="bounds" value="5,5,110,123"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkhc4lr2a-dmbs3p">
+			<property name="bounds" value="435,15,201,241"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::Vam8ynkkhjf452tt9bw0a">
+			<property name="bounds" value="155,355,153,74"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::Vam8ynkkhjfad22max5dj">
+			<property name="bounds" value="267,-4,153,74"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkhjjapncjaqjba">
+			<property name="bounds" value="267,89,105,60"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Turn">
+			<property name="bounds" value="286,95,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Turn:lnkPlayer">
+				<property name="sourceAnchor" value="310,180"/>
+				<property name="targetAnchor" value="243,308"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Turn:lnkPlayer">
+					<property name="bounds" value="236,281,10,19"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Turn:lnkPlayer">
+					<property name="bounds" value="267,179,21,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Discarding">
+			<property name="bounds" value="168,443,89,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Discarding:lnkOpenDeck">
+				<property name="sourceAnchor" value="262,461"/>
+				<property name="targetAnchor" value="470,344"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Discarding:lnkOpenDeck">
+					<property name="bounds" value="252,434,21,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Discarding:lnkOpenDeck">
+					<property name="bounds" value="443,332,10,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Discarding:lnkCombination">
+				<property name="sourceAnchor" value="227,448"/>
+				<property name="targetAnchor" value="329,81"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Discarding:lnkCombination">
+					<property name="bounds" value="268,158,21,19"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Discarding:lnkCombination">
+					<property name="bounds" value="212,284,21,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Player">
+			<property name="bounds" value="178,303,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Player:lnkCard2">
+				<property name="sourceAnchor" value="222,388"/>
+				<property name="targetAnchor" value="222,448"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Player:lnkCard2">
+					<property name="bounds" value="315,369,10,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Player:lnkCard2">
+					<property name="bounds" value="315,429,21,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Player:lnkCard">
+				<property name="sourceAnchor" value="263,378"/>
+				<property name="targetAnchor" value="371,454"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Player:lnkCard">
+					<property name="bounds" value="258,353,10,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Player:lnkCard">
+					<property name="bounds" value="350,417,21,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Combination">
+			<property name="bounds" value="286,-4,98,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Combination:lnkJoker">
+				<property name="sourceAnchor" value="320,81"/>
+				<property name="targetAnchor" value="143,448"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Combination:lnkJoker">
+					<property name="bounds" value="221,215,22,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Combination:lnkJoker">
+					<property name="bounds" value="124,421,21,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Combination:lnkTable">
+				<property name="sourceAnchor" value="312,81"/>
+				<property name="targetAnchor" value="161,308"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Combination:lnkTable">
+					<property name="bounds" value="281,72,21,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Combination:lnkTable">
+					<property name="bounds" value="150,283,10,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:OpenDeck">
+			<property name="bounds" value="465,275,87,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:OpenDeck:lnkGame">
+				<property name="sourceAnchor" value="470,320"/>
+				<property name="targetAnchor" value="432,320"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:OpenDeck:lnkGame">
+					<property name="bounds" value="442,298,10,19"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:OpenDeck:lnkGame">
+					<property name="bounds" value="503,298,10,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Game">
+			<property name="bounds" value="267,194,160,211"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Game:lnkSpieler">
+				<property name="sourceAnchor" value="272,348"/>
+				<property name="targetAnchor" value="263,348"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Game:lnkSpieler">
+					<property name="bounds" value="321,326,10,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Game:lnkSpieler">
+					<property name="bounds" value="315,326,22,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Game:lnkTable">
+				<property name="sourceAnchor" value="272,356"/>
+				<property name="targetAnchor" value="174,356"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Game:lnkTable">
+					<property name="bounds" value="174,284,10,19"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Game:lnkTable">
+					<property name="bounds" value="252,284,10,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Joker">
+			<property name="bounds" value="79,443,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Joker:lnkPlayer">
+				<property name="sourceAnchor" value="152,448"/>
+				<property name="targetAnchor" value="194,388"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Joker:lnkPlayer">
+					<property name="bounds" value="53,448,22,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Joker:lnkPlayer">
+					<property name="bounds" value="68,385,22,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Drawing">
+			<property name="bounds" value="366,443,89,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Drawing:lnkClosedDeck">
+				<property name="sourceAnchor" value="371,488"/>
+				<property name="targetAnchor" value="365,488"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Drawing:lnkClosedDeck">
+					<property name="bounds" value="415,396,10,19"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Drawing:lnkClosedDeck">
+					<property name="bounds" value="394,426,21,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Drawing:lnkOpenDeck">
+				<property name="sourceAnchor" value="438,448"/>
+				<property name="targetAnchor" value="489,360"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Drawing:lnkOpenDeck">
+					<property name="bounds" value="456,375,10,19"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Drawing:lnkOpenDeck">
+					<property name="bounds" value="419,422,21,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:ClosedDeck">
+			<property name="bounds" value="267,443,93,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:ClosedDeck:lnkGame">
+				<property name="sourceAnchor" value="318,448"/>
+				<property name="targetAnchor" value="318,410"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:ClosedDeck:lnkGame">
+					<property name="bounds" value="381,411,10,19"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:ClosedDeck:lnkGame">
+					<property name="bounds" value="321,477,10,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Timer">
+			<property name="bounds" value="465,374,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Timer:lnkTurn">
+				<property name="sourceAnchor" value="484,379"/>
+				<property name="targetAnchor" value="356,180"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Timer:lnkTurn">
+					<property name="bounds" value="455,309,10,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Timer:lnkTurn">
+					<property name="bounds" value="437,264,10,19"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Table">
+			<property name="bounds" value="89,303,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkhji3duu-3hmlnl">
+			<property name="bounds" value="493,473,124,234"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>
