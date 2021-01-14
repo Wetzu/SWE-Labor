@@ -90,7 +90,7 @@ public class FaceCombination extends Combination {
 	}
 
 	@Override
-	public boolean addCard(Card card) {
+	public boolean addCard(Card card,boolean end) {
 		if (this.cards.size() != 3) {
 			return false;
 		}
@@ -120,15 +120,15 @@ public class FaceCombination extends Combination {
 		return true;
 	}
 
-	@Override
-	public boolean addCards(ArrayList<Card> cards) {
+	/*@Override
+	public boolean addCards(ArrayList<Card> cards, boolean end) {
 		if (cards.size() != 1) {
 			return false; // trow ... Size
 		} else {
-			return this.addCard(cards.get(0));
+			return this.addCard(cards.get(0),end);
 		}
 
-	}
+	}*/
 
 	@Override
 	public Joker switchJoker(Card card) {

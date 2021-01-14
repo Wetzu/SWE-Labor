@@ -17,9 +17,9 @@ public abstract class Combination {
 
 	protected ArrayList<Card> cards;
 
-	public abstract boolean addCard(Card card);
+	public abstract boolean addCard(Card card, boolean end);
 
-	public abstract boolean addCards(ArrayList<Card> cards);
+	//public abstract boolean addCards(ArrayList<Card> cards,boolean end);
 
 	public abstract Joker switchJoker(Card card);
 

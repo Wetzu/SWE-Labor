@@ -15,7 +15,7 @@ public class MakeTurnIntImpl {
 	
 	
 	public void zugBeenden() {
-		
+	
 	}
 	
 	
