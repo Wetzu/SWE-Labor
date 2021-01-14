@@ -7,15 +7,15 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:view:::V1hexuhki9d6v1qrfv6yg">
-			<property name="bounds" value="5,5,169,103"/>
+			<property name="bounds" value="5,5,148,88"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:rummy.statemachine.StateMachineCenter">
-			<property name="bounds" value="194,5,200,264"/>
+			<property name="bounds" value="194,5,200,214"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="design:view:::V1hexuhki9d6pu4-laked9">
-			<property name="bounds" value="5,145,165,228"/>
+			<property name="bounds" value="5,145,144,188"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
