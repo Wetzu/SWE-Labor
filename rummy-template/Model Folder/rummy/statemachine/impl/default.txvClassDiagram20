@@ -2,12 +2,12 @@
 
 
 <nodeSet  version="1.1">
-	<view uin="V1hexuhkj039pk24ad8i1">
+	<view uin="V1hexuhki9d6v1qrfv6yg">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
-		<reference referencedUin="jdt:e_class:src:rummy.statemachine.impl.States">
-			<property name="bounds" value="5,5,186,182"/>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.impl.StateMachineImpl">
+			<property name="bounds" value="5,5,200,364"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

@@ -2,8 +2,18 @@
 
 
 <nodeSet  version="1.1">
-	<view uin="V1hexuhkinlhh36c09cgc">
+	<view uin="V1hexuhki1i5f6utls46s">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.port.MVCPort">
+			<property name="bounds" value="35,95,200,117"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.port.MatchPort">
+			<property name="bounds" value="255,55,341,181"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>

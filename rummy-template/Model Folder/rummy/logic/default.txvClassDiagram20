@@ -6,12 +6,12 @@
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
-		<reference referencedUin="jdt:e_class:src:rummy.logic.Dummy">
-			<property name="bounds" value="5,125,171,137"/>
+		<reference referencedUin="design:view:::V1hexuhki1i5f6utls46s">
+			<property name="bounds" value="225,5,109,128"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:rummy.logic.DummyObserver">
-			<property name="bounds" value="5,5,124,80"/>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.LogicImpl">
+			<property name="bounds" value="5,5,200,264"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

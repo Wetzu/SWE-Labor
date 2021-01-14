@@ -10,6 +10,13 @@
 		<rummy.main.class>rummy.Main</rummy.main.class>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>maven-foxhutch</id>
+			<url>https://raw.githubusercontent.com/foxhutch/maven/releases</url>
+		</repository>
+	</repositories>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

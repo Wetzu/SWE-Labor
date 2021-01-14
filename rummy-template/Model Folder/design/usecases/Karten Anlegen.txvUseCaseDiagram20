@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
-<nodeSet  version="1.1">
-	<view uin="sipjzkhc4jddu-afwdmj">
-		<property name="$metaclass" value="UseCaseDiagram20"/>
-		<property name="$name" value="Karten Anlegen"/>
-	</view>
-</nodeSet>

@@ -2,12 +2,35 @@
 
 
 <nodeSet  version="1.1">
-	<view uin="V1hexuhkj03a7biqassge">
+	<view uin="V1hexuhki9d6pu4-laked9">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
-		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.Observer">
-		</reference>
+		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.Subject">
+			<property name="bounds" value="1255,315,200,142"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.State">
+			<property name="bounds" value="195,43,321,192"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.StateMachinePort">
+			<property name="bounds" value="575,35,461,167"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.SubjectPort">
+			<property name="bounds" value="575,255,189,117"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.StateMachine">
+			<property name="bounds" value="195,275,200,142"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.Observer">
+			<property name="bounds" value="1015,475,200,117"/>
+			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
 </nodeSet>

@@ -5,29 +5,5 @@
 	<view uin="V1hexuhkfzgyq1u6nzo36">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
-		<reference referencedUin="design:view:::dkf913khc4jbsrfhlapt">
-			<property name="bounds" value="0,0,145,60"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="design:view:::sipjzkhc4jddu-afwdmj">
-			<property name="bounds" value="0,0,128,60"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="design:view:::V-jr6xbakhc4ijautsepi9">
-			<property name="bounds" value="171,-4,133,60"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="design:view:::ds4r8bkhc4kjid-d1afxc">
-			<property name="bounds" value="0,0,125,60"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="design:view:::gxd5yrkhc4kkwsvi2rjs">
-			<property name="bounds" value="0,0,125,60"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="design:view:::V-jr6xbakhc4jyot-vhm7j1">
-			<property name="bounds" value="164,-4,125,60"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
 	</view>
 </nodeSet>
