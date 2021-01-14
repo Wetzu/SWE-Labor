@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhki31vh09okla5q">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="structure"/>
+		<reference referencedUin="jdt:e_class:src:rummy.webui.MainController">
+			<property name="bounds" value="135,75,461,541"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:rummy.webui.MainController:matchPort">
+				<property name="sourceAnchor" value="601,136"/>
+				<property name="targetAnchor" value="800,136"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.webui.MainController:matchPort">
+					<property name="bounds" value="697,139,93,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:rummy.webui.MainController:lnkMatchView">
+				<property name="sourceAnchor" value="381,419"/>
+				<property name="targetAnchor" value="381,669"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:$stereotypesInplace:jdt:l_dpn:src:rummy.webui.MainController:lnkMatchView">
+					<property name="bounds" value="384,530,69,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.port.MatchPort">
+			<property name="bounds" value="795,55,381,161"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.webui.views.MatchView">
+			<property name="bounds" value="135,655,561,601"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value=""/>
+			<reference referencedUin="jdt:l_impl:src:rummy.webui.views.MatchView:IView">
+				<property name="sourceAnchor" value="641,660"/>
+				<property name="targetAnchor" value="760,397"/>
+				<property name="bendpoints" value="760,500"/>
+				<property name="smooth_bendpoints" value="760,500"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.webui.views.IView">
+			<property name="bounds" value="695,275,321,117"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.webui.views.ErrorView">
+			<property name="bounds" value="1215,435,301,241"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.webui.views.ErrorView:IView">
+				<property name="sourceAnchor" value="1220,520"/>
+				<property name="targetAnchor" value="960,397"/>
+				<property name="bendpoints" value="960,520"/>
+				<property name="smooth_bendpoints" value="960,520"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.webui.views.GameView">
+			<property name="bounds" value="856,755,520,364"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.webui.views.GameView:IView">
+				<property name="sourceAnchor" value="868,760"/>
+				<property name="targetAnchor" value="868,397"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.webui.views.QuitView">
+			<property name="bounds" value="1678,308,200,139"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.webui.views.QuitView:IView">
+				<property name="sourceAnchor" value="1683,355"/>
+				<property name="targetAnchor" value="1021,355"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

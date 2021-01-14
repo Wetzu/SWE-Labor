@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhki1hyblw8n7bwr">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<node uin="156bx8ki33nove-en80m6">
+			<property name="$metaclass" value="Guide"/>
+			<property name="$name" value="Guide1"/>
+			<property name="position" value="988"/>
+			<property name="horizontal" value="true"/>
+		</node>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.IPlayer">
+			<property name="bounds" value="-25,315,197,142"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchManagementPort">
+			<property name="bounds" value="575,17,200,167"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_dpn:src:rummy.matchcenter.port.MatchManagementPort:lnkMatchManagement">
+				<property name="sourceAnchor" value="900,50"/>
+				<property name="targetAnchor" value="1080,50"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:$stereotypesInplace:jdt:l_dpn:src:rummy.matchcenter.port.MatchManagementPort:lnkMatchManagement">
+					<property name="bounds" value="949,18,83,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:rummy.matchcenter.port.MatchManagementPort:lnkMatchFactory">
+				<property name="sourceAnchor" value="700,81"/>
+				<property name="targetAnchor" value="210,81"/>
+				<reference referencedUin="label:$stereotypesInplace:jdt:l_dpn:src:rummy.matchcenter.port.MatchManagementPort:lnkMatchFactory">
+					<property name="bounds" value="414,49,83,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.IMatch">
+			<property name="bounds" value="335,240,301,292"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchFactory">
+			<property name="bounds" value="5,5,200,217"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchManagement">
+			<property name="bounds" value="915,17,200,117"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RUMMY TABLE</title>
+<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+<script src="/app.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body th:data="${matchId}" onload="connect();">
+	<h1 align="center">
+		Player: <span th:text="${name}"> </span> Match: <span th:text="${matchId}"> default id</span>
+	</h1>
+
+	<table align="center">
+		<tbody>
+			<tr>
+				<td th:if="${state.canStart}">
+					<form method="POST" action="/rummy/start">
+						<button style="padding: 15px">start the game</button>
+					</form>
+				</td>
+				<td th:if="${state.canStop}">
+					<form method="POST" action="/rummy/quit">
+						<button style="padding: 15px">quit the game</button>
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="leaderBoard">
+		<table align="center">
+			<tbody>
+				<tr>
+					<td colspan="2">
+						<fieldset>
+							<legend>Leader Bord</legend>
+							<table align="center">
+								<tbody>
+									<tr>
+										<th align="center"></th>
+										<div th:each="game:${games}">
+											<th colspan="2" align="center" th:text="${game.label}"></th>
+										</div>
+										<th colspan="2" align="center">Total</th>
+									</tr>
+									<tr>
+										<td align="center" class="border"></td>
+										<div th:each="game:${games}">
+											<td align="center" class="border">Score</td>
+											<td align="center" class="border">Pips</td>
+										</div>
+										<td align="center" class="border">Score</td>
+										<td align="center" class="border">Pips</td>
+									</tr>
+									<tr th:each="player:${players}">
+										<td align="center" class="border" th:text="${player.name}">
+										</td>
+										<div th:each="result:${player.results}">
+											<td align="center" class="border" th:text="${result.score}"></td>
+											<td align="center" class="border" th:text="${result.pips}"></td>
+										</div>
+										<td align="center" class="border"
+											th:text="${player.totalScore}"></td>
+										<td align="center" class="border"
+											th:text="${player.totalPips}"></td>
+									</tr>
+								</tbody>
+							</table>
+						</fieldset>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

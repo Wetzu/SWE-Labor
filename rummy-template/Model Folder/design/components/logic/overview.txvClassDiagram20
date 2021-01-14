@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhki1i8seoo5755m">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="overview"/>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchManagementPort">
+			<property name="bounds" value="135,575,421,181"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.port.MatchManagementPort:matchFactory">
+				<property name="sourceAnchor" value="740,234"/>
+				<property name="targetAnchor" value="445,234"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:rummy.matchcenter.port.MatchManagementPort:lnkMatchFactory">
+				<property name="sourceAnchor" value="700,562"/>
+				<property name="targetAnchor" value="321,562"/>
+				<reference referencedUin="label:$stereotypesInplace:jdt:l_dpn:src:rummy.matchcenter.port.MatchManagementPort:lnkMatchFactory">
+					<property name="bounds" value="469,530,83,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.port.MatchPort">
+			<property name="bounds" value="715,75,421,181"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value=""/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.LogicImpl">
+			<property name="bounds" value="155,135,421,221"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.logic.LogicImpl:MVCPort">
+				<property name="sourceAnchor" value="581,350"/>
+				<property name="targetAnchor" value="720,350"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.logic.LogicImpl:subjectPort">
+				<property name="sourceAnchor" value="491,361"/>
+				<property name="targetAnchor" value="731,580"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.logic.LogicImpl:subjectPort">
+					<property name="bounds" value="587,542,100,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:rummy.logic.LogicImpl:MatchPort">
+				<property name="sourceAnchor" value="581,200"/>
+				<property name="targetAnchor" value="720,200"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.logic.LogicImpl:matchManagementPort">
+				<property name="sourceAnchor" value="380,361"/>
+				<property name="targetAnchor" value="380,580"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.logic.LogicImpl:matchManagementPort">
+					<property name="bounds" value="180,540,198,29"/>
+					<property name="weight" value="0.817351598173516"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.webui.MainController">
+			<property name="bounds" value="1355,195,397,161"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Property20,Operation20"/>
+			<reference referencedUin="jdt:l_ast:src:rummy.webui.MainController:matchPort">
+				<property name="sourceAnchor" value="1360,230"/>
+				<property name="targetAnchor" value="1141,230"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.webui.MainController:matchPort">
+					<property name="bounds" value="1151,233,93,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.webui.MainController:mvcPort">
+				<property name="sourceAnchor" value="1360,330"/>
+				<property name="targetAnchor" value="1141,330"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.webui.MainController:mvcPort">
+					<property name="bounds" value="1151,333,77,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.port.MVCPort">
+			<property name="bounds" value="715,295,421,201"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.SubjectPort">
+			<property name="bounds" value="595,575,461,181"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

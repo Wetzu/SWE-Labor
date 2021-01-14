@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhki4lhbn3-ckmxgr">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="structure"/>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.impl.Match">
+			<property name="bounds" value="2095,415,381,439"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.impl.Match:IMatch">
+				<property name="sourceAnchor" value="2280,420"/>
+				<property name="targetAnchor" value="2280,341"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.impl.Match:host">
+				<property name="sourceAnchor" value="2100,440"/>
+				<property name="targetAnchor" value="1941,440"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.matchcenter.impl.Match:host">
+					<property name="bounds" value="1951,443,46,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.impl.Match:lnkPlayer">
+				<property name="sourceAnchor" value="2100,620"/>
+				<property name="targetAnchor" value="1800,481"/>
+				<property name="bendpoints" value="1800,620"/>
+				<property name="smooth_bendpoints" value="1800,620"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:rummy.matchcenter.impl.Match:lnkPlayer">
+					<property name="bounds" value="2086,588,4,29"/>
+				</reference>
+				<reference referencedUin="label:$association20RoleClientInplace:jdt:l_ast:src:rummy.matchcenter.impl.Match:lnkPlayer">
+					<property name="bounds" value="2020,623,60,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:rummy.matchcenter.impl.Match:lnkPlayer">
+					<property name="bounds" value="1803,482,61,29"/>
+				</reference>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.matchcenter.impl.Match:lnkPlayer">
+					<property name="bounds" value="1730,492,67,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.impl.MatchFactoryImpl">
+			<property name="bounds" value="1235,535,461,381"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_dpn:src:rummy.matchcenter.impl.MatchFactoryImpl:lnkIPlayer">
+				<property name="sourceAnchor" value="1456,439"/>
+				<property name="targetAnchor" value="1740,332"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:$stereotypesInplace:jdt:l_dpn:src:rummy.matchcenter.impl.MatchFactoryImpl:lnkIPlayer">
+					<property name="bounds" value="1564,342,69,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:rummy.matchcenter.impl.MatchFactoryImpl:lnkPlayer">
+				<property name="sourceAnchor" value="1470,540"/>
+				<property name="targetAnchor" value="1620,400"/>
+				<property name="bendpoints" value="1470,400"/>
+				<property name="smooth_bendpoints" value="1470,400"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$stereotypesInplace:jdt:l_dpn:src:rummy.matchcenter.impl.MatchFactoryImpl:lnkPlayer">
+					<property name="bounds" value="1511,368,69,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.impl.MatchFactoryImpl:MatchFactory">
+				<property name="sourceAnchor" value="1339,540"/>
+				<property name="targetAnchor" value="1339,279"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.impl.MatchFactoryImpl:lnkMatch">
+				<property name="sourceAnchor" value="1701,780"/>
+				<property name="targetAnchor" value="2100,780"/>
+				<property name="bendpoints" value=""/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:rummy.matchcenter.impl.MatchFactoryImpl:lnkMatch">
+					<property name="bounds" value="1942,748,148,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:rummy.matchcenter.impl.MatchFactoryImpl:lnkMatch">
+				<property name="sourceAnchor" value="1503,460"/>
+				<property name="targetAnchor" value="2100,346"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:$stereotypesInplace:jdt:l_dpn:src:rummy.matchcenter.impl.MatchFactoryImpl:lnkMatch">
+					<property name="bounds" value="1767,365,69,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.impl.Player">
+			<property name="bounds" value="1615,215,321,261"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Property20"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.impl.Player:IPlayer">
+				<property name="sourceAnchor" value="1772,220"/>
+				<property name="targetAnchor" value="1772,186"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.impl.Player:match">
+				<property name="sourceAnchor" value="1941,400"/>
+				<property name="targetAnchor" value="2100,420"/>
+				<property name="bendpoints" value="2100,400"/>
+				<property name="smooth_bendpoints" value="2100,400"/>
+				<property name="location_set_by_user" value="true"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.IMatch">
+			<property name="bounds" value="2015,25,401,311"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.IPlayer">
+			<property name="bounds" value="1615,31,271,150"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchFactory">
+			<property name="bounds" value="1035,31,461,243"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchManagement">
+			<property name="bounds" value="95,56,312,117"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.impl.MatchMangementImpl">
+			<property name="bounds" value="115,355,361,121"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.impl.MatchMangementImpl:MatchManagement">
+				<property name="sourceAnchor" value="278,360"/>
+				<property name="targetAnchor" value="278,178"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchManagementPort">
+			<property name="bounds" value="555,25,421,200"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.MatchCenterImpl">
+			<property name="bounds" value="655,555,441,361"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.MatchCenterImpl:MatchFactory">
+				<property name="sourceAnchor" value="1070,560"/>
+				<property name="targetAnchor" value="1070,279"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.MatchCenterImpl:MatchManagement">
+				<property name="sourceAnchor" value="758,560"/>
+				<property name="targetAnchor" value="322,178"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:rummy.matchcenter.MatchCenterImpl.closeMatch:closeMatch~QIMatch;">
+			</reference>
+			<reference referencedUin="jdt:e_method:src:rummy.matchcenter.MatchCenterImpl.mkPlayer:mkPlayer~QString;~I">
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.MatchCenterImpl:matchFactory">
+				<property name="sourceAnchor" value="1101,684"/>
+				<property name="targetAnchor" value="1240,684"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:rummy.matchcenter.MatchCenterImpl.createMatch:createMatch~QString;">
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.MatchCenterImpl:matchMangement">
+				<property name="sourceAnchor" value="660,700"/>
+				<property name="targetAnchor" value="280,481"/>
+				<property name="bendpoints" value="280,700"/>
+				<property name="smooth_bendpoints" value="280,700"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.MatchCenterImpl:MatchManagementPort">
+				<property name="sourceAnchor" value="888,560"/>
+				<property name="targetAnchor" value="888,230"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:rummy.matchcenter.MatchCenterImpl.startGame:startGame~QIMatch;">
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

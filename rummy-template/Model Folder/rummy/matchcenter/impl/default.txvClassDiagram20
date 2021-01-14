@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhki1hyhwx-h4tk4m">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.impl.Match">
+			<property name="bounds" value="5,367,200,364"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.impl.Match:lnkPlayer">
+				<property name="sourceAnchor" value="160,372"/>
+				<property name="targetAnchor" value="149,274"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:rummy.matchcenter.impl.Match:lnkPlayer">
+					<property name="bounds" value="162,333,4,29"/>
+				</reference>
+				<reference referencedUin="label:$association20RoleClientInplace:jdt:l_ast:src:rummy.matchcenter.impl.Match:lnkPlayer">
+					<property name="bounds" value="-10,323,60,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:rummy.matchcenter.impl.Match:lnkPlayer">
+					<property name="bounds" value="155,284,61,29"/>
+				</reference>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.matchcenter.impl.Match:lnkPlayer">
+					<property name="bounds" value="93,327,67,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.impl.Match:host">
+				<property name="sourceAnchor" value="110,372"/>
+				<property name="targetAnchor" value="103,274"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.matchcenter.impl.Match:host">
+					<property name="bounds" value="55,294,46,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.impl.MatchFactoryImpl">
+			<property name="bounds" value="423,404,200,339"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.impl.MatchFactoryImpl:lnkMatch">
+				<property name="sourceAnchor" value="428,591"/>
+				<property name="targetAnchor" value="210,591"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:rummy.matchcenter.impl.MatchFactoryImpl:lnkMatch">
+					<property name="bounds" value="220,559,148,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.impl.Player">
+			<property name="bounds" value="5,5,200,264"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.impl.Player:match">
+				<property name="sourceAnchor" value="60,274"/>
+				<property name="targetAnchor" value="60,372"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.impl.MatchMangementImpl">
+			<property name="bounds" value="395,5,301,214"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

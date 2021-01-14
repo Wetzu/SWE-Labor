@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhkis28r0e-vywlda">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="matchport"/>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.port.MatchPort">
+			<property name="bounds" value="338,77,358,142"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.LogicImpl">
+			<property name="bounds" value="235,335,476,239"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.logic.LogicImpl:MatchPort">
+				<property name="sourceAnchor" value="496,340"/>
+				<property name="targetAnchor" value="496,224"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.logic.LogicImpl:matchManagementPort">
+				<property name="sourceAnchor" value="662,340"/>
+				<property name="targetAnchor" value="1000,200"/>
+				<property name="bendpoints" value="880,200"/>
+				<property name="smooth_bendpoints" value="880,200"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.logic.LogicImpl:matchManagementPort">
+					<property name="bounds" value="792,203,198,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.MatchCenterImpl">
+			<property name="bounds" value="995,355,641,389"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.MatchCenterImpl:matchMangement">
+				<property name="sourceAnchor" value="1590,749"/>
+				<property name="targetAnchor" value="1590,840"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.MatchCenterImpl:MatchManagementPort">
+				<property name="sourceAnchor" value="1356,360"/>
+				<property name="targetAnchor" value="1356,281"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.MatchCenterImpl:MatchFactory">
+				<property name="sourceAnchor" value="999,720"/>
+				<property name="targetAnchor" value="861,791"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.MatchCenterImpl:MatchManagement">
+				<property name="sourceAnchor" value="1641,499"/>
+				<property name="targetAnchor" value="1780,499"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.matchcenter.MatchCenterImpl:matchFactory">
+				<property name="sourceAnchor" value="1240,749"/>
+				<property name="targetAnchor" value="1240,840"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchManagementPort">
+			<property name="bounds" value="995,64,621,212"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchFactory">
+			<property name="bounds" value="475,753,381,267"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchManagement">
+			<property name="bounds" value="1775,395,401,179"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.impl.MatchFactoryImpl">
+			<property name="bounds" value="1035,835,200,314"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.impl.MatchFactoryImpl:MatchFactory">
+				<property name="sourceAnchor" value="1040,891"/>
+				<property name="targetAnchor" value="861,891"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.impl.MatchMangementImpl">
+			<property name="bounds" value="1416,835,520,314"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.matchcenter.impl.MatchMangementImpl:MatchManagement">
+				<property name="sourceAnchor" value="1810,840"/>
+				<property name="targetAnchor" value="1810,579"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

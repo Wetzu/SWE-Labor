@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhkis1zzjk91mmjz">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="mvcport"/>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.port.MVCPort">
+			<property name="bounds" value="515,75,450,196"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.Observer">
+			<property name="bounds" value="1915,415,384,141"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.State">
+			<property name="bounds" value="1741,114,200,192"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.SubjectPort">
+			<property name="bounds" value="515,315,441,121"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.Subject">
+			<property name="bounds" value="1175,95,381,181"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.impl.StateMachineImpl">
+			<property name="bounds" value="1155,375,567,339"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Property20"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.statemachine.impl.StateMachineImpl:Subject">
+				<property name="sourceAnchor" value="1231,380"/>
+				<property name="targetAnchor" value="1231,281"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.statemachine.impl.StateMachineImpl:currentState">
+				<property name="sourceAnchor" value="1646,380"/>
+				<property name="targetAnchor" value="1746,298"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.statemachine.impl.StateMachineImpl:currentState">
+					<property name="bounds" value="1693,340,106,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.statemachine.impl.StateMachineImpl:lnkObserver">
+				<property name="sourceAnchor" value="1727,460"/>
+				<property name="targetAnchor" value="1920,460"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:rummy.statemachine.impl.StateMachineImpl:lnkObserver">
+					<property name="bounds" value="1880,428,30,29"/>
+				</reference>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.statemachine.impl.StateMachineImpl:lnkObserver">
+					<property name="bounds" value="1820,463,80,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.StateMachineCenter">
+			<property name="bounds" value="515,603,541,239"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Property20"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.statemachine.StateMachineCenter:SubjectPort">
+				<property name="sourceAnchor" value="771,608"/>
+				<property name="targetAnchor" value="771,441"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.statemachine.StateMachineCenter:lnkStateMachineImpl">
+				<property name="sourceAnchor" value="1061,663"/>
+				<property name="targetAnchor" value="1160,663"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.statemachine.StateMachineCenter:lnkStateMachineImpl">
+					<property name="bounds" value="1150,726,118,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:rummy.statemachine.StateMachineCenter:lnkStateMachineImpl">
+					<property name="bounds" value="1120,631,30,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.LogicImpl">
+			<property name="bounds" value="75,235,281,301"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:rummy.logic.LogicImpl:MVCPort">
+				<property name="sourceAnchor" value="361,258"/>
+				<property name="targetAnchor" value="520,258"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.logic.LogicImpl:subjectPort">
+				<property name="sourceAnchor" value="361,380"/>
+				<property name="targetAnchor" value="520,380"/>
+				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.logic.LogicImpl:subjectPort">
+					<property name="bounds" value="410,383,100,29"/>
+				</reference>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

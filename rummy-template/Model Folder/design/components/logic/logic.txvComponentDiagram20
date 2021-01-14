@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V-oyrl70ki1hw4wqhz5x5k">
+		<property name="$metaclass" value="ComponentDiagram20"/>
+		<property name="__options" value="Show Simple Interfaces=true"/>
+		<property name="$name" value="logic"/>
+		<reference referencedUin="design:node:::ba089nki1hwzac-nq5dmj">
+			<property name="bounds" value="215,35,821,62"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:link:::ieje0rki3pqxi52pmyez:ba089nki1hwzac-nq5dmj">
+				<property name="sourceAnchor" value="430,102"/>
+				<property name="targetAnchor" value="430,180"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="design:link:::ieje0rkia98vt8-fcnbrq:ba089nki1hwzac-nq5dmj">
+				<property name="sourceAnchor" value="810,102"/>
+				<property name="targetAnchor" value="810,180"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="design:link:::ieje0rki1i758bjac63d:ba089nki1hwzac-nq5dmj">
+				<property name="sourceAnchor" value="538,102"/>
+				<property name="targetAnchor" value="538,180"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::ba089nki1hx60b-z9pgbm">
+			<property name="bounds" value="215,275,821,421"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::ba089nki1hxbz4-o1e62l:ba089nki1hx60b-z9pgbm">
+				<property name="bounds" value="156,105,181,81"/>
+				<property name="location_set_by_user" value="true"/>
+				<property name="bounds_setted_by_user" value="true"/>
+				<reference referencedUin="design:link:::ieje0rki9dtc421c1bwq:ba089nki1hxbz4-o1e62l:ba089nki1hx60b-z9pgbm">
+					<property name="sourceAnchor" value="561,470"/>
+					<property name="targetAnchor" value="680,470"/>
+					<property name="bendpoints" value=""/>
+				</reference>
+				<reference referencedUin="design:node:::-vedwtdki1i4vdn6jh4p4:ba089nki1hxbz4-o1e62l:ba089nki1hx60b-z9pgbm">
+					<property name="bounds" value="71,-7,14,14"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdki1i4vdn6jh4p4:ba089nki1hxbz4-o1e62l:ba089nki1hx60b-z9pgbm">
+						<property name="bounds" value="-171,-24,159,25"/>
+						<property name="location_set_by_user" value="true"/>
+					</reference>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::ba089nki9d5g2y-jjsova:ba089nki1hx60b-z9pgbm">
+				<property name="bounds" value="536,104,199,101"/>
+				<property name="location_set_by_user" value="true"/>
+				<property name="bounds_setted_by_user" value="true"/>
+				<reference referencedUin="design:node:::-vedwtdki9d5us4n046k4:ba089nki9d5g2y-jjsova:ba089nki1hx60b-z9pgbm">
+					<property name="bounds" value="96,-7,14,14"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdki9d5us4n046k4:ba089nki9d5g2y-jjsova:ba089nki1hx60b-z9pgbm">
+						<property name="bounds" value="44,-33,56,25"/>
+						<property name="location_set_by_user" value="true"/>
+					</reference>
+				</reference>
+				<reference referencedUin="design:node:::-vedwtdki9dkp6y-g9fgbc:ba089nki9d5g2y-jjsova:ba089nki1hx60b-z9pgbm">
+					<property name="bounds" value="-7,33,14,14"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdki9dkp6y-g9fgbc:ba089nki9d5g2y-jjsova:ba089nki1hx60b-z9pgbm">
+						<property name="bounds" value="-65,42,66,25"/>
+						<property name="location_set_by_user" value="true"/>
+					</reference>
+					<reference referencedUin="design:link:::ieje0rki9dt28a-k0gyje:-vedwtdki9dkp6y-g9fgbc:ba089nki9d5g2y-jjsova:ba089nki1hx60b-z9pgbm">
+						<property name="sourceAnchor" value="752,475"/>
+						<property name="targetAnchor" value="699,471"/>
+						<property name="bendpoints" value=""/>
+					</reference>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::-vedwtdki1i5z8h-ire2m2:ba089nki1hx60b-z9pgbm">
+				<property name="bounds" value="258,-7,14,14"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:link:::ieje0rki3pqqlpscbkh9:-vedwtdki1i5z8h-ire2m2:ba089nki1hx60b-z9pgbm">
+					<property name="sourceAnchor" value="480,273"/>
+					<property name="targetAnchor" value="435,198"/>
+					<property name="bendpoints" value=""/>
+				</reference>
+				<reference referencedUin="design:link:::ieje0rki1i700g-dmgp4g:-vedwtdki1i5z8h-ire2m2:ba089nki1hx60b-z9pgbm">
+					<property name="sourceAnchor" value="483,287"/>
+					<property name="targetAnchor" value="459,433"/>
+					<property name="bendpoints" value=""/>
+					<reference referencedUin="label:delegate:design:link:::ieje0rki1i700g-dmgp4g:-vedwtdki1i5z8h-ire2m2:ba089nki1hx60b-z9pgbm">
+						<property name="bounds" value="376,346,90,29"/>
+					</reference>
+				</reference>
+				<reference referencedUin="design:link:::ieje0rki1i6r894sjjkk:-vedwtdki1i5z8h-ire2m2:ba089nki1hx60b-z9pgbm">
+					<property name="sourceAnchor" value="489,273"/>
+					<property name="targetAnchor" value="532,198"/>
+					<property name="bendpoints" value=""/>
+				</reference>
+				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdki1i5z8h-ire2m2:ba089nki1hx60b-z9pgbm">
+					<property name="bounds" value="44,-24,49,25"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::-amcqg9ki9dsnhd-hqsyed:ba089nki1hx60b-z9pgbm">
+				<property name="bounds" value="456,125,20,20"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$name:design:node:::-amcqg9ki9dsnhd-hqsyed:ba089nki1hx60b-z9pgbm">
+					<property name="bounds" value="-43,30,106,25"/>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::-vedwtdki9d66kpq8i0bi:ba089nki1hx60b-z9pgbm">
+				<property name="bounds" value="576,-7,14,14"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdki9d66kpq8i0bi:ba089nki1hx60b-z9pgbm">
+					<property name="bounds" value="44,-24,33,25"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+				<reference referencedUin="design:link:::ieje0rki9dt8nq-4nmh7p:-vedwtdki9d66kpq8i0bi:ba089nki1hx60b-z9pgbm">
+					<property name="sourceAnchor" value="805,287"/>
+					<property name="targetAnchor" value="860,432"/>
+					<property name="bendpoints" value=""/>
+					<reference referencedUin="label:delegate:design:link:::ieje0rki9dt8nq-4nmh7p:-vedwtdki9d66kpq8i0bi:ba089nki1hx60b-z9pgbm">
+						<property name="bounds" value="841,345,90,29"/>
+					</reference>
+				</reference>
+				<reference referencedUin="design:link:::ieje0rki9dh68z-34314e:-vedwtdki9d66kpq8i0bi:ba089nki1hx60b-z9pgbm">
+					<property name="sourceAnchor" value="805,273"/>
+					<property name="targetAnchor" value="809,200"/>
+					<property name="bendpoints" value=""/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchFactory">
+			<property name="bounds" value="523,175,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:rummy.matchcenter.port.MatchFactory">
+				<property name="bounds" value="52,-3,107,25"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.matchcenter.port.MatchManagement">
+			<property name="bounds" value="415,175,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:rummy.matchcenter.port.MatchManagement">
+				<property name="bounds" value="-200,-5,154,25"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.Subject">
+			<property name="bounds" value="795,175,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:rummy.statemachine.port.Subject">
+				<property name="bounds" value="-19,30,58,25"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>
