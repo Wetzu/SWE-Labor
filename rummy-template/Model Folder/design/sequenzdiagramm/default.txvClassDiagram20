@@ -7,7 +7,7 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:view:::ei0q9hkikpt32rrr4g85">
-			<property name="bounds" value="5,5,156,91"/>
+			<property name="bounds" value="5,5,129,74"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
