@@ -18,12 +18,6 @@
 				<property name="sourceAnchor" value="621,521"/>
 				<property name="targetAnchor" value="840,521"/>
 				<property name="bendpoints" value=""/>
-				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.statemachine.StateMachineCenter:lnkStateMachineImpl">
-					<property name="bounds" value="702,524,118,29"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:rummy.statemachine.StateMachineCenter:lnkStateMachineImpl">
-					<property name="bounds" value="800,489,30,29"/>
-				</reference>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:rummy.statemachine.port.StateMachine">

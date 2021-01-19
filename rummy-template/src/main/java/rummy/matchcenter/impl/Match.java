@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import rummy.logic.Stapel;
 import rummy.matchcenter.port.IMatch;
 import rummy.matchcenter.port.IPlayer;
 
@@ -70,5 +71,7 @@ public class Match implements IMatch {
 	public Collection<? extends IPlayer> allPlayers() {
 		return new ArrayList<>(this.players);
 	}
+	
+	Stapel stapel = new Stapel();
 
 }

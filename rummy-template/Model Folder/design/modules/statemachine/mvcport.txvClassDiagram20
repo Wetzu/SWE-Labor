@@ -76,12 +76,6 @@
 			<reference referencedUin="jdt:l_ast:src:rummy.statemachine.StateMachineCenter:lnkStateMachineImpl">
 				<property name="sourceAnchor" value="1061,663"/>
 				<property name="targetAnchor" value="1160,663"/>
-				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.statemachine.StateMachineCenter:lnkStateMachineImpl">
-					<property name="bounds" value="1150,726,118,29"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:rummy.statemachine.StateMachineCenter:lnkStateMachineImpl">
-					<property name="bounds" value="1120,631,30,29"/>
-				</reference>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:rummy.logic.LogicImpl">

@@ -6,6 +6,8 @@ import org.springframework.web.context.annotation.ApplicationScope;
 
 import rummy.logic.port.MVCPort;
 import rummy.logic.port.MatchPort;
+import rummy.maketurn.port.MakeTurnInt;
+import rummy.maketurn.port.MakeTurnPort;
 import rummy.matchcenter.port.MatchFactory;
 import rummy.matchcenter.port.MatchManagement;
 import rummy.matchcenter.port.MatchManagementPort;
@@ -35,7 +37,15 @@ public class LogicImpl implements MatchPort, MVCPort {
 
 	@Autowired
 	private MatchManagementPort matchManagementPort;
-
+	
+	
+	@Autowired
+	MakeTurnPort mtPort;
+	
+    @Override
+	public MakeTurnInt makeTurnInt() {
+		return mtPort.makeTurnInt();
+	}
 	@Override
 	public MatchFactory matchFactory() {
 		return this.matchManagementPort.matchFactory();

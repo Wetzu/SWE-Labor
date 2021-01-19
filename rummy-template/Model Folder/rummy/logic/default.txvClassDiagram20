@@ -7,12 +7,48 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:view:::V1hexuhki1i5f6utls46s">
-			<property name="bounds" value="225,5,109,128"/>
+			<property name="bounds" value="225,5,95,108"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:rummy.logic.LogicImpl">
-			<property name="bounds" value="5,5,200,264"/>
+			<property name="bounds" value="5,5,200,254"/>
 			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.Stapel">
+			<property name="bounds" value="224,132,190,134"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkk47hz6oygrk4y">
+			<property name="bounds" value="205,278,97,88"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.KarteFarbe">
+			<property name="bounds" value="7,278,105,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.KarteSymbol">
+			<property name="bounds" value="452,-4,118,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.Karte">
+			<property name="bounds" value="452,95,200,154"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:rummy.logic.Karte:karteFarbe">
+				<property name="sourceAnchor" value="457,206"/>
+				<property name="targetAnchor" value="117,307"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:rummy.logic.Karte:karteSymbol">
+				<property name="sourceAnchor" value="516,100"/>
+				<property name="targetAnchor" value="516,81"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.logic.VerdeckterStapel">
+			<property name="bounds" value="452,268,147,114"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:rummy.logic.VerdeckterStapel:Stapel">
+				<property name="sourceAnchor" value="457,273"/>
+				<property name="targetAnchor" value="419,253"/>
+			</reference>
 		</reference>
 	</view>
 </nodeSet>

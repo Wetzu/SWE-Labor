@@ -1,7 +1,6 @@
 package rummy.statemachine.port;
 
 
-
 public interface StateMachinePort {
 	
 	StateMachine mkNewMachine(int id);
@@ -9,6 +8,5 @@ public interface StateMachinePort {
 	StateMachine getMachine(int id);
 
 	void closeMachine(int id);
-	
 	
 }

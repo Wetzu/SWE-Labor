@@ -14,8 +14,9 @@ public interface State {
 		Initialized, Closed,//
 		MustJoin, JoinOrStart, MustStart, Play,//
 		CanStart(JoinOrStart, MustStart), //
-		Join(MustJoin,CanStart);
-
+		Join(MustJoin,CanStart),
+		zugStart, offeneKarteGezogen, verdeckteKarteGezogen, kartenAusgelegt,zugEnde ;// unsere Zustände
+		
 		private List<State> subStates;
 
 		public static final S INITIAL_STATE = Initialized;

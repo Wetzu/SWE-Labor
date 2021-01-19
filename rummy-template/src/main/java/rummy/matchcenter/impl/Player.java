@@ -4,6 +4,10 @@ package rummy.matchcenter.impl;
 import rummy.matchcenter.port.IMatch;
 import rummy.matchcenter.port.IPlayer;
 
+import java.util.ArrayList;
+
+import rummy.logic.Karte;
+
 public class Player implements IPlayer {
 
 	private String name;
@@ -23,4 +27,6 @@ public class Player implements IPlayer {
 	public String getName() {
 		return this.name;
 	}
+	
+	public ArrayList<Karte> handkarten = new ArrayList<Karte>();
 }

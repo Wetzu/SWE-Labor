@@ -13,12 +13,13 @@ import rummy.statemachine.port.StateMachinePort;
 import rummy.statemachine.port.Subject;
 import rummy.statemachine.port.SubjectPort;
 
+
 @ApplicationScope
 @Component
-public class StateMachineCenter implements StateMachinePort, SubjectPort{
-	
+public class StateMachineCenter implements StateMachinePort, SubjectPort {
 
-	
+
+
 	/**
 	 * @link composition
 	 * @supplierCardinality 0..*
@@ -26,11 +27,12 @@ public class StateMachineCenter implements StateMachinePort, SubjectPort{
 	 * @supplierRole openMachine
 	 */
 	
+	
+
 	@SuppressWarnings("unused")
 	private StateMachineImpl lnkStateMachineImpl;
 	private Map<Integer, StateMachineImpl> openMachines = new HashMap<>();
-	
-	
+
 	@Override
 	public synchronized StateMachine mkNewMachine(int id) {
 		if (this.openMachines.containsKey(id))
@@ -53,6 +55,7 @@ public class StateMachineCenter implements StateMachinePort, SubjectPort{
 			stateMachine.setState(State.S.Closed);
 			stateMachine.detachAll();
 		}
+
 		this.openMachines.remove(id);
 	}
 
@@ -61,6 +64,8 @@ public class StateMachineCenter implements StateMachinePort, SubjectPort{
 		return this.openMachines.get(id);
 	}
 
+
+
 	
-	
+
 }

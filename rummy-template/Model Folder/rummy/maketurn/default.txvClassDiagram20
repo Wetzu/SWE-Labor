@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhkk43nnlaeguf77">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="design:view:::V1hexuhkk43pstj-5i2kzu">
+			<property name="bounds" value="5,105,119,108"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkk43pi39-gwd5j0">
+			<property name="bounds" value="5,5,84,68"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Class20"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:rummy.maketurn.MakeTurn">
+			<property name="bounds" value="155,-5,200,274"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

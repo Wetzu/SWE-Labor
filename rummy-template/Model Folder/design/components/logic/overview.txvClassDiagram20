@@ -43,7 +43,7 @@
 				<property name="sourceAnchor" value="491,361"/>
 				<property name="targetAnchor" value="731,580"/>
 				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.logic.LogicImpl:subjectPort">
-					<property name="bounds" value="587,542,100,29"/>
+					<property name="bounds" value="603,542,84,24"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_impl:src:rummy.logic.LogicImpl:MatchPort">
@@ -55,7 +55,7 @@
 				<property name="targetAnchor" value="380,580"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.logic.LogicImpl:matchManagementPort">
-					<property name="bounds" value="180,540,198,29"/>
+					<property name="bounds" value="180,540,166,24"/>
 					<property name="weight" value="0.817351598173516"/>
 					<property name="location_set_by_user" value="true"/>
 				</reference>
@@ -72,14 +72,14 @@
 				<property name="targetAnchor" value="1141,230"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.webui.MainController:matchPort">
-					<property name="bounds" value="1151,233,93,29"/>
+					<property name="bounds" value="1151,233,78,24"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:rummy.webui.MainController:mvcPort">
 				<property name="sourceAnchor" value="1360,330"/>
 				<property name="targetAnchor" value="1141,330"/>
 				<reference referencedUin="label:$association20RoleSupplierInplace:jdt:l_ast:src:rummy.webui.MainController:mvcPort">
-					<property name="bounds" value="1151,333,77,29"/>
+					<property name="bounds" value="1151,333,64,24"/>
 				</reference>
 			</reference>
 		</reference>
