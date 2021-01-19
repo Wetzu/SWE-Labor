@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Y-TEMPLATE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div>
+		<h1 align="center">RUMMY Central</h1>
+		<h1 align="center">  Error: <span th:text="${error}"> </span></h1>
+		<table align="center">
+				<tbody>
+					<tr>
+						<td>
+		<fieldset>
+			<legend>Join an existing match or create a new one if the
+				MatchId field is left empty!</legend>
+			<table align="center">
+				<tbody>
+					<tr>
+						<td>
+							<form method="POST" action="/rummy/join">
+									<table align="center">
+										<tbody>
+											<tr>
+												<td>Your Name</td>
+												<td><input name="name"></td>
+											</tr>
+											<tr>
+												<td>Match Id</td>
+												<td><input name="matchId"></td>
+											</tr>
+											<tr>
+												<td colspan="2" align="center">
+													<button>create / join</button>
+												</td>
+											</tr>
+										</tbody>
+
+									</table>
+							</form>
+						</td>
+
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+		</td>
+		</tr>
+		</tbody>
+	</div>
+</body>
+</html>

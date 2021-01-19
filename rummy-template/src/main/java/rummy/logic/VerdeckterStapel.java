@@ -1,13 +1,37 @@
+package rummy.logic;
+
+import rummy.logic.Karte;
 import rummy.logic.KarteFarbe;
 import rummy.logic.KarteSymbol;
+import rummy.logic.Stapel;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class VerdeckterStapel extends Stapel{
+
+	private ArrayList<Karte> karten;
+
+
 	public VerdeckterStapel() {
 		
 	}
 	
 	public Karte getCard() {
-		return;
+		int index = karten.size() - 1;
+		Karte karte = karten.get(index);
+		karten.remove(index);
+		return karte;
+	}
+
+	private void Init(){
+		karten = new ArrayList<Karte>(104);
+		for (KarteSymbol wert : KarteSymbol.values()) {
+			for (KarteFarbe farbe : KarteFarbe.values()) {
+				Karte karte = new Karte(wert, farbe);
+				karten.add(karte);
+				karten.add(karte);
+			}
+		}
+		Collections.shuffle(karten);
 	}
 }

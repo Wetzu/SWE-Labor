@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RUMMY GAME</title>
+<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+<script src="/app.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body th:data="${matchId}" onload="connect();">
+	<h1 align="center">
+		Player: <span th:text="${name}"> </span> Match: <span th:text="${matchId}"> default id</span>
+	</h1>
+
+	<table align="center">
+		<tbody>
+			<tr>
+				<td>  RUNNING
+				</td>
+				<td th:if="${state.canStop}">
+					<form method="POST" action="/rummy/quit">
+						<button style="padding: 15px">quit the game</button>
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+</body>
+</html>

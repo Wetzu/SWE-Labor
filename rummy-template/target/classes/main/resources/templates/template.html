@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RUMMY</title>
+<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+<script src="/app.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body th:data="${value}" onload="connect();"> <!-- Der einfachste Weg, um mittels thymeleaf an connect() ein Parameter zu übergeben, -->
+	<div>                                     <!-- besteht darin, diesen Wert an ein Attribut im HTML-Tag zu binden. -->
+		<h1 align="center">VIEW</h1>          <!-- Dieses Attribut wird dann via JavaScript ausgelesen (siehe app.js). -->
+		<table align="center">
+			<tbody>
+				<tr>
+					<td>
+						<form method="POST" action="/rummy/doIt">
+							<fieldset>
+								<legend>Increment the magic value! <span th:text=${value}> </span></legend>
+								<button> do it!</button>
+							</fieldset>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
