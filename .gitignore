@@ -1,4 +1,3 @@
-/.idea/
-/rummy-template/lib/
-/rummy-template/rummy-template.iml
-/SWE-Labor.iml
+/rummy-template/target/*
+/rummy-template/target/classes/
+/rummy-template/target/generated-sources/
