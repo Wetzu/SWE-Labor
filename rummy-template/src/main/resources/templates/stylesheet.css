@@ -1,27 +1,29 @@
 .bigBox {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    min-width: 100%;
+    margin: 5%;
 }
 
-.middleRow {
-    display: flex;
-    flex-direction: row;
-    height: 70%;
+.rotate {
+    transform: rotate(90deg);
 }
 
-.middleColumn {
-    width: 70%;
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
+.non-rotate {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
 }
 
 .upperRow {
     display: flex;
     flex-direction: row; 
     justify-content: center;
+}
+
+.middleRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 70%;
 }
 
 .bottomRow {
@@ -33,11 +35,39 @@
 .leftColumn {
     display: flex;
     flex-direction: column; 
-    float: right;
+    justify-content: center;
+    margin-right: 2%;
+    flex-grow: 1;
+}
+
+.middleColumn {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 5;
 }
 
 .rightColumn {
     display: flex;
     flex-direction: column; 
-    float: left;
+    justify-content: center;
+    margin-left: 2%;
+    flex-grow: 1;
+}
+
+.player {
+    background: lightblue;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 1%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.middle {
+    height: 250px;
+    width: 400px;
 }
