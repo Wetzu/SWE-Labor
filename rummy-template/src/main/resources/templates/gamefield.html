@@ -1,75 +1,75 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
 <title>RUMMY</title>
 <script src="/webjars/sockjs-client/sockjs.min.js"></script>
 <script src="/webjars/stomp-websocket/stomp.min.js"></script>
 <script src="/app.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel='stylesheet' href="stylesheet.css">
+<link rel='stylesheet' href="/stylesheet.css">
 </head>
 <body th:data="${value}" onload="connect();"> <!-- Der einfachste Weg, um mittels thymeleaf an connect() ein Parameter zu übergeben, -->
 	<div class="bigBox">
 		<div class="upperRow">
 			<div class="player">
-				<p>Olaf</p>
+				<p th:text="John"/>
 			</div>
 		</div>
 		<div class="middleRow">
 			<div class="leftColumn">
 				<div class="player">
-					<p>Olaf</p>
+					<p th:text="Berry"/>
 				</div>
 			</div>
 			<div class="middleColumn table">
 				<div>
 					<div class="upperRow">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">	
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
 					</div>
 					<div class="middleRow">
 					<div class="leftColumn">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="rotate">	
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
 					</div>
 					<div class="middleColumn">
 					<div class="middle">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
 					</div>
 					</div>
 					<div class="rightColumn">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="rotate">	
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
 					</div>
 					</div>
 					<div class="bottomRow">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">	
-						<img src="/C:\Users\Lumine\Desktop\swelab\workspace\SWE-Labor\rummy-template\src\main\resources\static\img\cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
 					</div>
 				</div>
 			</div>
 			<div class="rightColumn">
 				<div class="player">
-					<p>Günther</p>
+					<p th:text="Fuchs"/>
 				</div>
 			</div>
 			</div>
 				<div class="bottomRow">
 					<div class="player">
-						<p>Olaf</p>
+						<p th:text="${name}"/>
 					</div>
 				</div>
 		</div>
