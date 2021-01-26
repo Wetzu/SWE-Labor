@@ -68,6 +68,16 @@
 }
 
 .middle {
+    display: flex;
     height: 250px;
-    width: 400px;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    background-color: darkgreen;
+    border: thick solid brown;
+    border-radius: 50%;
+    padding: 2%;
 }
