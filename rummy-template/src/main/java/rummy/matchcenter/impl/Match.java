@@ -37,7 +37,7 @@ public class Match implements IMatch {
 	Match(int num, int idx) {
 		this.numberOfSeries = num;
 		this.id = idx;
-
+		currentTurn = 0;
 	}
 
 	@Override
@@ -58,8 +58,16 @@ public class Match implements IMatch {
 	void setHost(Player host) {
 		this.host = host;
 		this.players.add(host);
+
 	}
 
+	private int currentTurn;
+
+	public IPlayer getCurrentTurn(){
+		if(currentTurn <= players.size()) currentTurn = 0;
+		return players.get(currentTurn++);
+
+	}
 	
 
 	@Override

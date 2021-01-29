@@ -6,4 +6,5 @@ public interface IPlayer {
 
 	String getName();
 
+	int cardCount();
 }

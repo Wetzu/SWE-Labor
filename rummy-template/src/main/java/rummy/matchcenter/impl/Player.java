@@ -1,6 +1,8 @@
 
 package rummy.matchcenter.impl;
 
+import rummy.logic.KarteFarbe;
+import rummy.logic.KarteSymbol;
 import rummy.matchcenter.port.IMatch;
 import rummy.matchcenter.port.IPlayer;
 
@@ -16,6 +18,7 @@ public class Player implements IPlayer {
 	Player(Match match, String name) {
 		this.name = name;
 		this.match = match;
+		this.handkarten.add(new Karte(KarteSymbol.Bube, KarteFarbe.Pik));
 	}
 
 	@Override
@@ -29,4 +32,9 @@ public class Player implements IPlayer {
 	}
 	
 	public ArrayList<Karte> handkarten = new ArrayList<Karte>();
+
+	@Override
+	public int cardCount() {
+		return handkarten.size();
+	}
 }

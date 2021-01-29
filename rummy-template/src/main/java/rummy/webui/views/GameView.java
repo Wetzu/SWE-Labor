@@ -2,6 +2,8 @@ package rummy.webui.views;
 
 import org.springframework.ui.Model;
 
+import org.thymeleaf.model.IStandaloneElementTag;
+import rummy.matchcenter.impl.Match;
 import rummy.matchcenter.impl.Player;
 import rummy.matchcenter.port.IMatch;
 import rummy.matchcenter.port.IPlayer;
@@ -18,11 +20,8 @@ public class GameView implements IView {
 	private static final String MATCHID_ATTR = "matchId";
 	private static final String STATE_ATTR = "state";
 	private static final String OPEN_HAND = "openHand";
-	private static final String CLOSED_HAND_1 = "closedHand1";
-	private static final String CLOSED_HAND_2 = "closedHand2";
-	private static final String CLOSED_HAND_3 = "closedHand3";
-	private static final String COUNT_OPEN = "countOpen";
-	private static final String COUNT_CLOSED = "countClosed";
+	private static final String OTHER_PLAYERS = "otherPlayers";
+	private static final String
 	private static final String CURRENT_PLAYER = "currentPlayer";
 
 	private IPlayer player;
@@ -47,7 +46,8 @@ public class GameView implements IView {
 		this.model.addAttribute(GameView.STATE_ATTR, new StateContainer(this.canStop, false));
 		this.model.addAttribute(GameView.MATCHID_ATTR, String.format("%d", this.match.getId()));
 		this.model.addAttribute(GameView.NAME_ATTR, this.player.getName());
-		this.model.addAttribute(GameView.OPEN_HAND, this.player.);
+		this.model.addAttribute(GameView.OPEN_HAND, ((Player) this.player).handkarten);
+		this.model.addAttribute(GameView.OTHER_PLAYERS, playerList.remove(match.getHost()));
 		return GameView.TEMPLATE_NAME;
 	}
 }
