@@ -23,6 +23,12 @@ public class GameView implements IView {
 	private static final String OPEN_HAND = "openHand";
 	private static final String OPEN_DECK = "openDeck";
 	private static final String OTHER_PLAYERS = "otherPlayers";
+	private static final String PLAYER_1_COUNT = "player1Cards";
+	private static final String PLAYER_2_COUNT = "player2Cards";
+	private static final String PLAYER_3_COUNT = "player3Cards";
+	private static final String PLAYER_1_NAME = "player1Name";
+	private static final String PLAYER_2_NAME = "player2Name";
+	private static final String PLAYER_3_NAME = "player3Name";
 	private static final String CURRENT_PLAYER = "currentPlayer";
 
 	private IPlayer player;
@@ -48,7 +54,14 @@ public class GameView implements IView {
 		this.model.addAttribute(GameView.MATCHID_ATTR, String.format("%d", this.match.getId()));
 		this.model.addAttribute(GameView.NAME_ATTR, this.player.getName());
 		this.model.addAttribute(GameView.OPEN_HAND, ((Player) this.player).handkarten);
-		this.model.addAttribute(GameView.OTHER_PLAYERS, playerList.remove(match.getHost()));
+		List<Player> otherPlayers = playerList;
+		otherPlayers.remove(match.getHost());
+		this.model.addAttribute(GameView.PLAYER_1_COUNT, otherPlayers.get(0).handkarten);
+		this.model.addAttribute(GameView.PLAYER_2_COUNT, ((otherPlayers.size() > 1) ? otherPlayers.get(1).handkarten : null));
+		this.model.addAttribute(GameView.PLAYER_3_COUNT, ((otherPlayers.size() > 2) ? otherPlayers.get(2).handkarten : null));
+		this.model.addAttribute(GameView.PLAYER_1_NAME, otherPlayers.get(0).getName());
+		this.model.addAttribute(GameView.PLAYER_2_NAME, ((otherPlayers.size() > 1) ? otherPlayers.get(1).getName() : ""));
+		this.model.addAttribute(GameView.PLAYER_3_NAME, ((otherPlayers.size() > 2) ? otherPlayers.get(2).getName() : ""));
 		try {
 			this.model.addAttribute(GameView.OPEN_DECK, match.GetTopCard().getStringRepresentation());
 		}
