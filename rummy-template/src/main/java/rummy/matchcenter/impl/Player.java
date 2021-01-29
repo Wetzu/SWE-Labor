@@ -18,7 +18,6 @@ public class Player implements IPlayer {
 	Player(Match match, String name) {
 		this.name = name;
 		this.match = match;
-		this.handkarten.add(new Karte(KarteSymbol.Bube, KarteFarbe.Pik));
 	}
 
 	@Override
@@ -36,5 +35,18 @@ public class Player implements IPlayer {
 	@Override
 	public int cardCount() {
 		return handkarten.size();
+	}
+
+	public void drawOpen(){
+		Karte drawedCard=this.match.DrawOpen();
+		handkarten.add(drawedCard);
+	}
+	public void drawClosed(){
+		Karte drawedCard=this.match.DrawClosed();
+		handkarten.add(drawedCard);
+	}
+	public void discardCard(int id){
+		match.discardCard(handkarten.get(id));
+		handkarten.remove(id);
 	}
 }

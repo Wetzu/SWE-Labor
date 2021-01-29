@@ -13,14 +13,11 @@ public class VerdeckterStapel extends Stapel{
 
 
 	public VerdeckterStapel() {
-		
+		Init();
 	}
 	
-	public Karte getCard() {
-		int index = karten.size() - 1;
-		Karte karte = karten.get(index);
-		karten.remove(index);
-		return karte;
+	public Karte GetCard() {
+		return karten.remove(karten.size() - 1);
 	}
 
 	private void Init(){

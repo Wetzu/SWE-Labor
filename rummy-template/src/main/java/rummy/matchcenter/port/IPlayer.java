@@ -7,4 +7,10 @@ public interface IPlayer {
 	String getName();
 
 	int cardCount();
+
+	void discardCard(int id);
+
+	void drawOpen();
+
+	void drawClosed();
 }

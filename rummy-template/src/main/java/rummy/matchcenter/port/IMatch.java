@@ -1,5 +1,7 @@
 package rummy.matchcenter.port;
 
+import rummy.logic.Karte;
+
 import java.util.Collection;
 
 public interface IMatch {
@@ -14,5 +16,9 @@ public interface IMatch {
 	int getId();
 
 	Collection<? extends IPlayer> allPlayers();
+
+	void StartGame();
+
+	Karte GetTopCard();
 
 }

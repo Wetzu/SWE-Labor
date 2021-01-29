@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import rummy.logic.Stapel;
+import rummy.logic.Karte;
+import rummy.logic.OffenerStapel;
+import rummy.logic.VerdeckterStapel;
 import rummy.matchcenter.port.IMatch;
 import rummy.matchcenter.port.IPlayer;
 
@@ -34,10 +36,15 @@ public class Match implements IMatch {
 	private int numberOfSeries;
 	private int id;
 
+	private VerdeckterStapel verdeckterStapel;
+	private OffenerStapel offenerStapel;
+
 	Match(int num, int idx) {
 		this.numberOfSeries = num;
 		this.id = idx;
 		currentTurn = 0;
+		verdeckterStapel = new VerdeckterStapel();
+		offenerStapel = new OffenerStapel(verdeckterStapel.GetCard());
 	}
 
 	@Override
@@ -60,6 +67,14 @@ public class Match implements IMatch {
 		this.players.add(host);
 
 	}
+	@Override
+	public void StartGame(){
+		for (Player player:players) {
+			for(int i = 0; i < 13; i++){
+				player.handkarten.add(verdeckterStapel.GetCard());
+			}
+		}
+	}
 
 	private int currentTurn;
 
@@ -79,7 +94,21 @@ public class Match implements IMatch {
 	public Collection<? extends IPlayer> allPlayers() {
 		return new ArrayList<>(this.players);
 	}
-	
-	Stapel stapel = new Stapel();
+
+	@Override
+	public Karte GetTopCard() {
+		return offenerStapel.ShowTopCard();
+	}
+
+	public Karte DrawOpen(){
+		return offenerStapel.GetCard();
+	}
+
+	public Karte DrawClosed(){
+		return verdeckterStapel.GetCard();
+	}
+	public void discardCard(Karte karte){
+		this.offenerStapel.AddCard(karte);
+	}
 
 }

@@ -71,8 +71,10 @@ class MatchCenterImpl implements MatchManagementPort, MatchFactory, MatchManagem
 		StateMachine stateMachine = this.stateMachinePort.getMachine(idx);
 		if (stateMachine == null)
 			return false;
-		if (State.S.CanStart.isSuperStateOf(stateMachine.getState()))
+		if (State.S.CanStart.isSuperStateOf(stateMachine.getState())){
+			match.StartGame();
 			return this.matchMangement.startGame(match);
+		}
 		return false;
 	}
 	

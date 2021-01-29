@@ -23,26 +23,26 @@
 			</div>
 			<div class="middleColumn table">
 				<div>
-					<div class="upperRow" th:each="card: $otherPlayers.get(0).handkarten">
+					<div class="upperRow">
 						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
 					</div>
 					<div class="middleRow">
-						<div class="leftColumn" th:each="card: $otherPlayers.get(1).handkarten" th:if="$otherPlayers.Size() > 1">
+						<div class="leftColumn">
 							<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
 						</div>
 						<div class="middleColumn">
 							<div class="middle">
 								<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
-								<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+								<p th:text="${openDeck}" onclick="/offenZiehen" style="font-size: 5em"/>
 							</div>
 						</div>
-						<div class="rightColumn" th:each="card: $otherPlayers.get(2).handkarten" th:if="$otherPlayers.Size() = 3">
+						<div class="rightColumn">
 							<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate"/>
 						</div>
 					</div>
 					<div class="bottomRow">
-						<div th:each="card: ${openHand}">
-							<p th:text="${card.getStringRepresentation()}" style="font-size: 5em"/>
+						<div th:each="card, iter : ${openHand}">
+							<p th:text="${card.getStringRepresentation()}" style="font-size: 5em" onclick="window.location.replace('/discard/' + {iter})"/>
 						</div>
 					</div>
 				</div>

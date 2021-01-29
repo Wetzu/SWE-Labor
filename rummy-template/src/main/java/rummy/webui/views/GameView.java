@@ -3,6 +3,7 @@ package rummy.webui.views;
 import org.springframework.ui.Model;
 
 import org.thymeleaf.model.IStandaloneElementTag;
+import rummy.logic.Karte;
 import rummy.matchcenter.impl.Match;
 import rummy.matchcenter.impl.Player;
 import rummy.matchcenter.port.IMatch;
@@ -20,8 +21,8 @@ public class GameView implements IView {
 	private static final String MATCHID_ATTR = "matchId";
 	private static final String STATE_ATTR = "state";
 	private static final String OPEN_HAND = "openHand";
+	private static final String OPEN_DECK = "openDeck";
 	private static final String OTHER_PLAYERS = "otherPlayers";
-	private static final String
 	private static final String CURRENT_PLAYER = "currentPlayer";
 
 	private IPlayer player;
@@ -48,6 +49,13 @@ public class GameView implements IView {
 		this.model.addAttribute(GameView.NAME_ATTR, this.player.getName());
 		this.model.addAttribute(GameView.OPEN_HAND, ((Player) this.player).handkarten);
 		this.model.addAttribute(GameView.OTHER_PLAYERS, playerList.remove(match.getHost()));
+		try {
+			this.model.addAttribute(GameView.OPEN_DECK, match.GetTopCard().getStringRepresentation());
+		}
+		catch (IndexOutOfBoundsException e){
+			this.model.addAttribute(GameView.OPEN_DECK, "");
+		}
+		;
 		return GameView.TEMPLATE_NAME;
 	}
 }

@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -129,6 +130,30 @@ public class MainController implements Observer {
 		
 		if (!this.matchPort.matchManagement().startGame(this.match)) 
 			return new MatchView(this.match, this.player, this.match.enoughPlayers()).build(model);
+		return new GameView(this.match, this.player, this.match.getHost().equals(this.player)).build(model);
+	}
+
+	@RequestMapping(value = "/discard/{id}", method = {RequestMethod.GET, RequestMethod.POST})
+	public synchronized String discardCard(Model model, HttpServletRequest request, @PathVariable String id){
+		if(this.match == null)
+			return new ErrorView(ErrorView.Error.NoMatch, this.currentState).build(model);
+		this.player.discardCard(Integer.parseInt(id));
+		return new GameView(this.match, this.player, this.match.getHost().equals(this.player)).build(model);
+	}
+
+	@RequestMapping(value = "/drawOpen", method = {RequestMethod.GET, RequestMethod.POST})
+	public synchronized String drawOpen(Model model, HttpServletRequest request){
+		if(this.match == null)
+			return new ErrorView(ErrorView.Error.NoMatch, this.currentState).build(model);
+		this.player.drawOpen();
+		return new GameView(this.match, this.player, this.match.getHost().equals(this.player)).build(model);
+	}
+
+	@RequestMapping(value = "/drawClosed", method = {RequestMethod.GET, RequestMethod.POST})
+	public synchronized String drawClosed(Model model, HttpServletRequest request){
+		if(this.match == null)
+			return new ErrorView(ErrorView.Error.NoMatch, this.currentState).build(model);
+		this.player.drawClosed();
 		return new GameView(this.match, this.player, this.match.getHost().equals(this.player)).build(model);
 	}
 	
