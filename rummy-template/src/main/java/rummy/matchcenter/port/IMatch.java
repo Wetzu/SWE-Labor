@@ -1,6 +1,7 @@
 package rummy.matchcenter.port;
 
 import rummy.logic.Karte;
+import rummy.statemachine.port.StateMachine;
 
 import java.util.Collection;
 
@@ -21,4 +22,15 @@ public interface IMatch {
 
 	Karte GetTopCard();
 
+	StateMachine getStatemachine();
+
+	public void discardCard(IPlayer player, int index);
+
+	public void drawClosed(IPlayer player);
+	public void drawOpen(IPlayer player);
+
+	int getCurrentTurn();
+	void setCurrentTurn(int currentTurn);
+
+	void setNextCurrentTurn();
 }

@@ -15,7 +15,7 @@ public interface State {
 		MustJoin, JoinOrStart, MustStart, Play,//
 		CanStart(JoinOrStart, MustStart), //
 		Join(MustJoin,CanStart),
-		zugStart, offeneKarteGezogen, verdeckteKarteGezogen, kartenAusgelegt,zugEnde ;// unsere Zustände
+		zugStart, offeneKarteGezogen, verdeckteKarteGezogen, kartenAusgelegt,zugEnde, MussZiehen ;// unsere Zustände
 		
 		private List<State> subStates;
 

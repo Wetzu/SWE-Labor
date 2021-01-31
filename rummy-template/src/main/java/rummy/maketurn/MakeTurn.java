@@ -9,6 +9,8 @@ import rummy.maketurn.impl.MakeTurnIntImpl;
 import rummy.maketurn.port.MakeTurnInt;
 import rummy.maketurn.port.MakeTurnPort;
 
+import rummy.matchcenter.port.IMatch;
+import rummy.matchcenter.port.IPlayer;
 import rummy.statemachine.StateMachineCenter;
 import rummy.statemachine.impl.StateMachineImpl;
 import rummy.statemachine.port.State;
@@ -19,45 +21,49 @@ import rummy.statemachine.port.State;
 public class MakeTurn implements MakeTurnPort, MakeTurnInt {
 	
 
- StateMachineImpl stateMachine;
 
- private MakeTurnIntImpl mtiImpl;
+ private MakeTurnIntImpl mtiImpl = new MakeTurnIntImpl();
 
- public void karteZiehen(boolean verdeckt) {
-  if (stateMachine.getState() == State.S.zugStart)
-   this.mtiImpl.karteZiehen(verdeckt);
+ public MakeTurn() {
+  this.mtiImpl = new MakeTurnIntImpl();
  }
 
- public void karteAblegen() {
-  if (stateMachine.getState() == State.S.verdeckteKarteGezogen
-    || stateMachine.getState() == State.S.kartenAusgelegt)
-   this.mtiImpl.karteAblegen();
- }
- 
- public void kartenAuslegen() {
-  if ((stateMachine.getState() == State.S.offeneKarteGezogen) || (stateMachine.getState() == State.S.verdeckteKarteGezogen) )
-	  this.mtiImpl.zugBeenden();
- }
- 
- public void quit() {
-  if (stateMachine.getState() == State.S.zugEnde)
-
-  this.mtiImpl.zugBeenden();
- }
- 
- 
- 
- public void nexteSpieler() {
-  if (stateMachine.getState() == State.S.zugEnde)
-  this.mtiImpl.zugBeenden();
+ public void offeneKarteZiehen(IMatch match, IPlayer player) {
+  if (match.getStatemachine().getState().isSubStateOf(State.S.MussZiehen))
+   return;
+  this.mtiImpl.karteZiehen(false, match, player);
  }
 
- 
+ public void verdeckteKarteZiehen(IMatch match, IPlayer player){
+  if (match.getStatemachine().getState().isSubStateOf(State.S.MussZiehen))
+   return;
+  this.mtiImpl.karteZiehen(true, match, player);
+ }
+
+ public void karteAblegen(IMatch match, IPlayer player, int index) {
+  if (match.getStatemachine().getState() == State.S.verdeckteKarteGezogen
+    || match.getStatemachine().getState() == State.S.offeneKarteGezogen)
+   this.mtiImpl.karteAblegen(match, player, index);
+ }
+
  @Override
  public MakeTurnInt makeTurnInt() {
-  this.stateMachine = new StateMachineImpl();
   return null;
  }
+
+// public void quit() {
+//  if (stateMachine.getState() == State.S.zugEnde)
+//
+//  this.mtiImpl.zugBeenden();
+// }
+//
+//
+//
+// public void nexteSpieler() {
+//  if (stateMachine.getState() == State.S.zugEnde)
+//  this.mtiImpl.zugBeenden();
+// }
+
 }
 
 

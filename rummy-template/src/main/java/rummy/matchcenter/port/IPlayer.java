@@ -1,17 +1,25 @@
 package rummy.matchcenter.port;
 
+import rummy.logic.Karte;
+
 public interface IPlayer {
 
 	IMatch currentMatch();
 
 	String getName();
 
+	int getId();
+
 	int cardCount();
 
-	void discardCard(int id);
+	Karte discardCard(int id);
 
-	void drawOpen();
+	void addCard(Karte karte);
 
-	void drawClosed();
+	public boolean isHasDrawn();
 
+	public void setHasDrawn(boolean hasDrawn);
+
+	public boolean isTurn();
+	public void setTurn(boolean turn);
 }

@@ -9,6 +9,9 @@ import rummy.logic.OffenerStapel;
 import rummy.logic.VerdeckterStapel;
 import rummy.matchcenter.port.IMatch;
 import rummy.matchcenter.port.IPlayer;
+import rummy.statemachine.impl.StateMachineImpl;
+import rummy.statemachine.port.State;
+import rummy.statemachine.port.StateMachine;
 
 public class Match implements IMatch {
 
@@ -19,6 +22,21 @@ public class Match implements IMatch {
 	 */
 
 	private Player host;
+	private int currentTurn;
+	public StateMachine stateMachine;
+
+	public Match(StateMachine stateMachine) {
+		this.stateMachine = new StateMachineImpl();
+		currentTurn = 0;
+	}
+
+	public StateMachine getStateMachine(){
+		return stateMachine;
+	}
+
+	public void setStateMachine(StateMachine stateMachine){
+		this.stateMachine = stateMachine;
+	}
 
 	/**
 	 * @clientCardinality
@@ -43,6 +61,7 @@ public class Match implements IMatch {
 		this.numberOfSeries = num;
 		this.id = idx;
 		currentTurn = 0;
+		stateMachine = new StateMachineImpl();
 		verdeckterStapel = new VerdeckterStapel();
 		offenerStapel = new OffenerStapel(verdeckterStapel.GetCard());
 	}
@@ -69,21 +88,15 @@ public class Match implements IMatch {
 	}
 	@Override
 	public void StartGame(){
+		int id = 0;
 		for (Player player:players) {
 			for(int i = 0; i < 13; i++){
 				player.handkarten.add(verdeckterStapel.GetCard());
 			}
+			player.id = id;
 		}
+		this.stateMachine.setState(State.S.zugStart);
 	}
-
-	private int currentTurn;
-
-	public IPlayer getCurrentTurn(){
-		if(currentTurn <= players.size()) currentTurn = 0;
-		return players.get(currentTurn++);
-
-	}
-	
 
 	@Override
 	public int getId() {
@@ -100,15 +113,51 @@ public class Match implements IMatch {
 		return offenerStapel.ShowTopCard();
 	}
 
-	public Karte DrawOpen(){
-		return offenerStapel.GetCard();
+	public void drawOpen(IPlayer player){
+		if(!player.isHasDrawn()){
+			player.addCard(offenerStapel.GetCard());
+			player.setHasDrawn(true);
+		}
+		this.stateMachine.setState(State.S.offeneKarteGezogen);
 	}
 
-	public Karte DrawClosed(){
-		return verdeckterStapel.GetCard();
+	public void drawClosed(IPlayer player){
+		if(!player.isHasDrawn()){
+			player.addCard(verdeckterStapel.GetCard());
+			player.setHasDrawn(true);
+		}
+		this.stateMachine.setState(State.S.verdeckteKarteGezogen);
 	}
-	public void discardCard(Karte karte){
-		this.offenerStapel.AddCard(karte);
+	public void discardCard(IPlayer player, int index){
+		if(player.isTurn()){
+			Karte karte = player.discardCard(index);
+			this.offenerStapel.AddCard(karte);
+			player.setTurn(false);
+			this.setNextCurrentTurn();
+		}
+
+
 	}
 
+	public StateMachine getStatemachine(){
+		return stateMachine;
+	}
+
+	@Override
+	public int getCurrentTurn() {
+		return currentTurn;
+	}
+
+	@Override
+	public void setCurrentTurn(int currentTurn) {
+		this.currentTurn = currentTurn;
+	}
+
+	@Override
+	public void setNextCurrentTurn() {
+		if(currentTurn >= players.size()) setCurrentTurn(0);
+		currentTurn++;
+		players.get(currentTurn).setTurn(true);
+		players.get(currentTurn).setHasDrawn(false);
+	}
 }

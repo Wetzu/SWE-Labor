@@ -15,6 +15,8 @@ import org.springframework.web.context.annotation.SessionScope;
 
 import rummy.logic.port.MVCPort;
 import rummy.logic.port.MatchPort;
+import rummy.maketurn.MakeTurn;
+import rummy.maketurn.impl.MakeTurnIntImpl;
 import rummy.matchcenter.impl.Match;
 import rummy.matchcenter.impl.Player;
 import rummy.matchcenter.port.IMatch;
@@ -62,6 +64,7 @@ public class MainController implements Observer {
 	private IMatch match;
 	private IPlayer player;
 	private State currentState;
+	private MakeTurn makeTurn = new MakeTurn();
 
 	private void attach(IMatch match) {
 		this.mvcPort.subject(match.getId()).attach(this);
@@ -135,33 +138,25 @@ public class MainController implements Observer {
 
 	@RequestMapping(value = "/discard/{id}", method = {RequestMethod.GET, RequestMethod.POST})
 	public synchronized String discardCard(Model model, HttpServletRequest request, @PathVariable String id){
-//		if (request.getMethod().equals("GET"))
-//			return this.update(model);
-		if(this.match == null)
-			return new ErrorView(ErrorView.Error.NoMatch, this.currentState).build(model);
-		this.player.discardCard(Integer.parseInt(id));
+		if (request.getMethod().equals("GET"))
+			return this.update(model);
+		this.makeTurn.karteAblegen(this.match, this.player, Integer.parseInt(id));
 		return new GameView(this.match, this.player, this.match.getHost().equals(this.player)).build(model);
 	}
 
 	@RequestMapping(value = "/drawOpen", method = {RequestMethod.GET, RequestMethod.POST})
 	public synchronized String drawOpen(Model model, HttpServletRequest request){
-//		if (request.getMethod().equals("GET"))
-//			return this.update(model);
-		if(this.match == null)
-			return new ErrorView(ErrorView.Error.NoMatch, this.currentState).build(model);
-		this.player.drawOpen();
-//		update(State.S.offeneKarteGezogen);
+		if (request.getMethod().equals("GET"))
+			return this.update(model);
+		this.makeTurn.offeneKarteZiehen(this.match, this.player);
 		return new GameView(this.match, this.player, this.match.getHost().equals(this.player)).build(model);
 	}
 
 	@RequestMapping(value = "/drawClosed", method = {RequestMethod.GET, RequestMethod.POST})
 	public synchronized String drawClosed(Model model, HttpServletRequest request){
-//		if (request.getMethod().equals("GET"))
-//			return this.update(model);
-		if(this.match == null)
-			return new ErrorView(ErrorView.Error.NoMatch, this.currentState).build(model);
-		this.player.drawClosed();
-//		update(State.S.verdeckteKarteGezogen);
+		if (request.getMethod().equals("GET"))
+			return this.update(model);
+		this.makeTurn.verdeckteKarteZiehen(this.match, this.player);
 		return new GameView(this.match, this.player, this.match.getHost().equals(this.player)).build(model);
 	}
 	
