@@ -13,4 +13,5 @@ public interface IPlayer {
 	void drawOpen();
 
 	void drawClosed();
+
 }

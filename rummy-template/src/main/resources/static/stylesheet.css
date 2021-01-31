@@ -6,11 +6,11 @@
 
 .rotate {
     transform: rotate(90deg);
+    margin: -13%
 }
 
 .non-rotate {
-    margin-left: 7.5px;
-    margin-right: 7.5px;
+   margin: .25%;
 }
 
 .upperRow {
@@ -24,6 +24,13 @@
     flex-direction: row;
     flex-wrap: nowrap;
     height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    font-size: 4em;
+    height: 1em;
 }
 
 .bottomRow {
@@ -78,6 +85,6 @@
 .table {
     background-color: darkgreen;
     border: thick solid brown;
-    border-radius: 50%;
+    border-radius: 2%;
     padding: 2%;
 }

@@ -77,6 +77,18 @@ class MatchCenterImpl implements MatchManagementPort, MatchFactory, MatchManagem
 		}
 		return false;
 	}
+
+	public synchronized boolean drawOpen(IMatch match){
+		int idx = match == null ? -1 : match.getId();
+		StateMachine stateMachine = this.stateMachinePort.getMachine(idx);
+		if (stateMachine == null)
+			return false;
+		if (State.S.zugStart.isSuperStateOf(stateMachine.getState())){
+			match.getHost();
+			return this.matchMangement.startGame(match);
+		}
+		return false;
+	}
 	
 	@Override
 	public synchronized boolean closeMatch(IMatch match) {

@@ -27,4 +27,36 @@ function reload_rummy() {
 	window.location.replace(window.location.href);					// Verwandelt den bisherigen Post-Request in einen Get-Request,
 }																	// wodurch er auf Seiten des Servers identifiziert werden kann.
 
+function drawOpen(){
+    req = new XMLHttpRequest()
+    req.onreadystatechange = function () {
+        if(this.readyState == 4 && this.status == 200){
+            reload_rummy();
+        }
+    }
+    req.open("POST", "http://localhost:8080/rummy/drawOpen");
+    req.send();
+}
+
+function drawClosed(){
+    req = new XMLHttpRequest()
+    req.onreadystatechange = function () {
+        if(this.readyState == 4 && this.status == 200){
+            reload_rummy();
+        }
+    }
+    req.open("POST", "http://localhost:8080/rummy/drawClosed");
+    req.send();
+}
+
+function discardCard(id){
+    req = new XMLHttpRequest()
+    req.onreadystatechange = function () {
+        if(this.readyState == 4 && this.status == 200){
+            reload_rummy();
+        }
+    }
+    req.open("POST", "http://localhost:8080/rummy/discard/" + id);
+    req.send();
+}
 

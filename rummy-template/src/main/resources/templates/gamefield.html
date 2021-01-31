@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel='stylesheet' href="/stylesheet.css">
 </head>
-<body th:data="${value}" onload="connect();"> <!-- Der einfachste Weg, um mittels thymeleaf an connect() ein Parameter zu übergeben, -->
+<body th:data="${matchId}" onload="connect();"> <!-- Der einfachste Weg, um mittels thymeleaf an connect() ein Parameter zu übergeben, -->
 	<div class="bigBox">
 		<div class="upperRow">
 			<div class="player">
@@ -23,26 +23,26 @@
 			</div>
 			<div class="middleColumn table">
 				<div>
-					<div th:each="card: ${player1Cards}"  class="upperRow">
-						<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
+					<div  class="upperRow">
+						<p th:each="card: ${player1Cards}" th:text="${cardBack}" class="card non-rotate"/>
 					</div>
 					<div class="middleRow">
-						<div th:each="card: ${player2Cards}" class="leftColumn">
-							<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate">
+						<div class="leftColumn">
+							<p th:each="card: ${player2Cards}" class="rotate card" th:text="${cardBack}"/>
 						</div>
 						<div class="middleColumn">
 							<div class="middle">
-								<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="non-rotate">
-								<p th:text="${openDeck}" onclick="/offenZiehen" style="font-size: 5em"/>
+								<p th:text="${cardBack}" class="card" onclick="drawClosed()"/>
+								<p th:text="${openDeck}" class="card" onclick="drawOpen()"/>
 							</div>
 						</div>
-						<div th:each="card: ${player3Cards}" class="rightColumn">
-							<img src="/img/cardback.png" alt="cardback" height="40" width="25" class="rotate"/>
+						<div class="rightColumn">
+							<p th:each="card: ${player3Cards}" class="rotate card" th:text="${cardBack}"/>
 						</div>
 					</div>
 					<div class="bottomRow">
 						<div th:each="card, iter : ${openHand}">
-							<p th:text="${card.getStringRepresentation()}" style="font-size: 5em" onclick="window.location.replace('/discard/' + {iter})"/>
+							<p th:id="${iter.index}" th:text="${card.getStringRepresentation()}" class="card  non-rotate" th:onclick="|discardCard(${iter.index})|"/>
 						</div>
 					</div>
 				</div>

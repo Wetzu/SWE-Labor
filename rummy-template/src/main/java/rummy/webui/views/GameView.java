@@ -30,6 +30,9 @@ public class GameView implements IView {
 	private static final String PLAYER_2_NAME = "player2Name";
 	private static final String PLAYER_3_NAME = "player3Name";
 	private static final String CURRENT_PLAYER = "currentPlayer";
+	private static final String CARD_BACK = "cardBack";
+
+	String cardBackunicode = Character.toString(0x1F0A0);
 
 	private IPlayer player;
 	private IMatch match;
@@ -68,7 +71,7 @@ public class GameView implements IView {
 		catch (IndexOutOfBoundsException e){
 			this.model.addAttribute(GameView.OPEN_DECK, "");
 		}
-		;
+		this.model.addAttribute(GameView.CARD_BACK, cardBackunicode);
 		return GameView.TEMPLATE_NAME;
 	}
 }
