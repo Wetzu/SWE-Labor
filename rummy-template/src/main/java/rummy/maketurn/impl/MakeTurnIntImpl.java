@@ -21,12 +21,7 @@ public class MakeTurnIntImpl {
  public void karteAblegen(IMatch match, IPlayer player, int index) {
   match.discardCard(player, index);
  }
- 
- 
- public void nextSpieler() {
-	 
- }
- 
+
  
  public void zugBeenden() {
  
