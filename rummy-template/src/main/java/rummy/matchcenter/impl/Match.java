@@ -155,9 +155,9 @@ public class Match implements IMatch {
 
 	@Override
 	public void setNextCurrentTurn() {
-		if(currentTurn >= players.size()) setCurrentTurn(0);
-		currentTurn++;
+		if(currentTurn == players.size()) setCurrentTurn(0);
 		players.get(currentTurn).setTurn(true);
 		players.get(currentTurn).setHasDrawn(false);
+		currentTurn++;
 	}
 }

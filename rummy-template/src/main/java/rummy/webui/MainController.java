@@ -141,6 +141,7 @@ public class MainController implements Observer {
 		if (request.getMethod().equals("GET"))
 			return this.update(model);
 		this.makeTurn.karteAblegen(this.match, this.player, Integer.parseInt(id));
+		this.socket.update("");
 		return new GameView(this.match, this.player, this.match.getHost().equals(this.player)).build(model);
 	}
 
@@ -149,6 +150,7 @@ public class MainController implements Observer {
 		if (request.getMethod().equals("GET"))
 			return this.update(model);
 		this.makeTurn.offeneKarteZiehen(this.match, this.player);
+		this.socket.update("");
 		return new GameView(this.match, this.player, this.match.getHost().equals(this.player)).build(model);
 	}
 
@@ -157,6 +159,7 @@ public class MainController implements Observer {
 		if (request.getMethod().equals("GET"))
 			return this.update(model);
 		this.makeTurn.verdeckteKarteZiehen(this.match, this.player);
+		this.socket.update("");
 		return new GameView(this.match, this.player, this.match.getHost().equals(this.player)).build(model);
 	}
 	

@@ -11,13 +11,13 @@
 <body th:data="${matchId}" onload="connect();"> <!-- Der einfachste Weg, um mittels thymeleaf an connect() ein Parameter zu übergeben, -->
 	<div class="bigBox">
 		<div class="upperRow">
-			<div class="player">
+			<div th:class="player">
 				<p th:text="${player1Name}"/>
 			</div>
 		</div>
 		<div class="middleRow">
 			<div class="leftColumn">
-				<div class="player">
+				<div th:class="player">
 					<p th:text="${player2Name}"/>
 				</div>
 			</div>
@@ -48,13 +48,13 @@
 				</div>
 			</div>
 			<div class="rightColumn">
-				<div class="player">
+				<div th:class="player">
 					<p th:text="${player3Name}"/>
 				</div>
 			</div>
 			</div>
 				<div class="bottomRow">
-					<div class="player">
+					<div th:class="player">
 						<p th:text="${name}"/>
 					</div>
 				</div>

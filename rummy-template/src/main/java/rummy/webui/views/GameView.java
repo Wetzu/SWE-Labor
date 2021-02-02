@@ -2,9 +2,6 @@ package rummy.webui.views;
 
 import org.springframework.ui.Model;
 
-import org.thymeleaf.model.IStandaloneElementTag;
-import rummy.logic.Karte;
-import rummy.matchcenter.impl.Match;
 import rummy.matchcenter.impl.Player;
 import rummy.matchcenter.port.IMatch;
 import rummy.matchcenter.port.IPlayer;
@@ -29,8 +26,13 @@ public class GameView implements IView {
 	private static final String PLAYER_1_NAME = "player1Name";
 	private static final String PLAYER_2_NAME = "player2Name";
 	private static final String PLAYER_3_NAME = "player3Name";
+	private static final String PLAYER_1_TURN = "player1Turn";
+	private static final String PLAYER_2_TURN = "player2Turn";
+	private static final String PLAYER_3_TURN = "player3Turn";
+	private static final String PLAYER_0_TURN = "player0Turn";
 	private static final String CURRENT_PLAYER = "currentPlayer";
 	private static final String CARD_BACK = "cardBack";
+	private static final String PLAYER_TURN = "playerTurn";
 
 	String cardBackunicode = Character.toString(0x1F0A0);
 
@@ -58,13 +60,14 @@ public class GameView implements IView {
 		this.model.addAttribute(GameView.NAME_ATTR, this.player.getName());
 		this.model.addAttribute(GameView.OPEN_HAND, ((Player) this.player).handkarten);
 		List<Player> otherPlayers = playerList;
-		otherPlayers.remove(match.getHost());
+		otherPlayers.remove(this.player);
 		this.model.addAttribute(GameView.PLAYER_1_COUNT, otherPlayers.get(0).handkarten);
 		this.model.addAttribute(GameView.PLAYER_2_COUNT, ((otherPlayers.size() > 1) ? otherPlayers.get(1).handkarten : null));
 		this.model.addAttribute(GameView.PLAYER_3_COUNT, ((otherPlayers.size() > 2) ? otherPlayers.get(2).handkarten : null));
 		this.model.addAttribute(GameView.PLAYER_1_NAME, otherPlayers.get(0).getName());
 		this.model.addAttribute(GameView.PLAYER_2_NAME, ((otherPlayers.size() > 1) ? otherPlayers.get(1).getName() : ""));
 		this.model.addAttribute(GameView.PLAYER_3_NAME, ((otherPlayers.size() > 2) ? otherPlayers.get(2).getName() : ""));
+//		setActiveTurn(model, otherPlayers);
 		try {
 			this.model.addAttribute(GameView.OPEN_DECK, match.GetTopCard().getStringRepresentation());
 		}
@@ -74,4 +77,12 @@ public class GameView implements IView {
 		this.model.addAttribute(GameView.CARD_BACK, cardBackunicode);
 		return GameView.TEMPLATE_NAME;
 	}
+
+	private void setActiveTurn(Model model, List<Player> otherPlayers){
+		model.addAttribute(GameView.PLAYER_0_TURN, player.isTurn() ? "turn player" : "player");
+		model.addAttribute(GameView.PLAYER_1_TURN, otherPlayers.get(0).isTurn() ? "turn player" : "player");
+		model.addAttribute(GameView.PLAYER_0_TURN, otherPlayers.size() >= 2 && otherPlayers.get(1).isTurn() ? "turn player" : "player");
+		model.addAttribute(GameView.PLAYER_0_TURN, otherPlayers.size() == 3 && otherPlayers.get(2).isTurn() ? "turn player" : "player");
+	}
+
 }

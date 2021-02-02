@@ -74,6 +74,10 @@
     justify-content: center;
 }
 
+.turn{
+    background: mediumvioletred;
+}
+
 .middle {
     display: flex;
     height: 250px;
